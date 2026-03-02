@@ -9,30 +9,73 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
+                padding: 20px;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                gap: 10px;
             }
 
             main {
-                font-family: Arial, Helvetica, sans-serif;
-                background-color: rgba(255, 255, 255, 0.5);
-                border-bottom: 1px solid rgba(128, 128, 128, 0);
-                padding: 25px;
-                border-radius: 30px;
+                flex: 1;
+                background-color: rgb(255, 255, 255, 0.75);
+                padding: 5px;
+                border-radius: 9px;
+            }
+
+            main > * {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            header {
+                background-color: white;
+                padding: 0;
+                padding-left: 10px;
+                padding-right: 10px;
+                display: flex;
+                align-items: center;
+                border-radius: 15px;
+            }
+
+            header > img {
+                width: 350px;
+            }
+
+            hr {
+                margin-left: 12px;
+                margin-right: 12px;
             }
         </style>
     </head>
     <body>
+        <header>
+            <img src="../img/logo/pokuizLogo.png" title="Logotipo de PoKuiz">
+        </header>
+        <br>
         <main>
             <h1>¡Te damos la bienvenida a PoKuiz!</h1>
+            <hr size="1">
             <p>PoKuiz es una página web en Español creada por <a target="_blank" href="https://github.com/markelcanton">Markel Cantón</a> donde se publican 
-            cuestionarios relacionados con <a target="_blank" href="https://pokemon.es/">Pokémon</a>.</p>
+            cuestionarios relacionados con Pokémon.</p>
             <p>Estas preguntas están sacadas del anime, el TCG, VGC y más fuentes, como guías oficiales, el manga y otras publicaciones. En PoKuiz, nos centramos en reunir esas
             preguntas para poder preguntarle al entrenador cuál es su nivel de conocimiento sobre Pokémon.</p>
             <p>¿Crees que lo sabes todo sobre Pokémon? Entonces, #LetsPoKuiz!</p>
         </main>
         <br>
         <main>
-            <h2>PoKuiz no está disponbie.</h2>
+            <h2>PoKuiz aún no está disponbie.</h2>
+            <hr size="1">
             <p>PoKuiz es un proyecto en desarrollo y aún no está disponble. ¡Esperamos poder publicar la primera versión dentro de muy poco!</p>
+        </main>
+        <br>
+        <main>
+            <h2>Aviso importante:</h2>
+            <hr size="1">
+            <p>PoKuiz es un trabajo derivado no oficial basado en <a target="_blank" href="https://pokemon.com/">Pokémon</a>. Los sprites, nombres y demás datos oficiales pertenecen a: &copy; Pokémon/Nintendo/Creatures Inc./GAME FREAK Inc.</p>
+            <p>PoKuiz solo ha sido creado con fines de entretenimiento y aprendizaje. Nunca será utilizado para fines comerciales.</p>
         </main>
     </body>
 </html>
