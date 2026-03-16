@@ -1,0 +1,194 @@
+/* =========================================
+   1. RESET Y ESTRUCTURA DE LA PREGUNTA
+   ========================================= */
+#contenedor-pregunta {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contenedor-pregunta.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#contenedor-pregunta, 
+.input-simple-container, 
+#input-dinamico {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden;
+}
+
+/* =========================================
+   2. INPUTS (SIMPLE Y MULTI)
+   ========================================= */
+.input-simple-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; 
+    padding: 15px 0;
+}
+
+#main_input {
+    width: 100% !important;
+    max-width: 500px !important;
+    height: 45px;
+    border-radius: 25px;
+    border: 2px solid #777;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#main_input:focus {
+    border-color: #ee1515;
+}
+
+.multi-container {
+    width: 100% !important;
+    margin: 15px 0 !important;
+}
+
+.multi-row input[type="text"],
+.multi-row input[type="number"],
+.multi-row input:not([type="radio"]):not([type="checkbox"]) {
+    height: 32px;
+    border-radius: 30px;
+    padding: 0px 20px;
+    border: 1px solid #777;
+    color: black;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 200px; /* Ajusta este ancho según necesites para que quepa en la derecha */
+}
+
+.multi-row input:focus {
+    border-color: #ee1515;
+}
+
+/* Ajuste adicional para que la fila se vea alineada como en tu foto */
+.multi-row {
+    display: flex;
+    justify-content: space-between; /* Empuja el label a la izquierda y el input a la derecha */
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+/* =========================================
+   3. OPCIONES (RADIO Y CHECKBOX)
+   ========================================= */
+.grid-opciones {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.opcion-box {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.opcion-box:hover {
+    border-color: #ee1515;
+    background: #fff5f5;
+}
+
+/* =========================================
+   4. BOTONES: DISEÑO ESTABLE (SIN MOVIMIENTO)
+   ========================================= */
+.botones-container {
+    display: flex;
+    flex-direction: row; /* El resultado irá debajo de los botones */
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.botones-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    min-height: 50px; /* Evita que el contenedor colapse */
+}
+
+.botones-container button {
+    min-width: 180px; /* Ancho fijo para que no cambie al cambiar el texto */
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#btn-comprobar { background: linear-gradient(145deg, #ee1515, #b31010); }
+#btn-saltar { background: linear-gradient(145deg, #3aa1ff, #2980b9); }
+#btn-nueva { background: linear-gradient(145deg, #2ecc71, #27ae60); }
+
+.botones-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* =========================================
+   5. RESULTADOS: ESPACIO RESERVADO
+   ========================================= */
+#resultado {
+    width: 100%;
+    min-height: 120px; /* RESERVA EL ESPACIO para que no se muevan los botones */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-header {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 10px 0;
+}
+
+.solucion-box {
+    width: 100% !important;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-left: 6px solid #ee1515;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+/* Marcadores de puntuación */
+#marcadores {
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+}
