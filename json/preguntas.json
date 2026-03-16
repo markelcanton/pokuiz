@@ -1,0 +1,1502 @@
+[ 
+    {
+        "tipo": "multi",
+        "pregunta": "Si al número del ataque de Hawlucha le sumas el número de la Pokédex de Cyndaquil, a ese resultado le restas el número de la Pokédex de Persian, luego lo multiplicas por el ataque especial de Riolu y por último lo divides por el número de evoluciones de Eevee, ¿cuál es el resultado? (+1,5p)",
+        "campos": [
+            { "id": "atk_hawlucha", "label": "Ataque de Hawlucha", "tipo": "number", "correcta": 92 },
+            { "id": "dex_cyndaquil", "label": "Número de Pokédex de Cyndaquil", "tipo": "number", "correcta": 155 },
+            { "id": "dex_persian", "label": "Número de Pokédex de Persian", "tipo": "number", "correcta": 53 },
+            { "id": "spatk_riolu", "label": "Ataque Especial de Riolu", "tipo": "number", "correcta": 35 },
+            { "id": "evos_eevee", "label": "Número de evoluciones de Eevee", "tipo": "number", "correcta": 8 },
+            { "id": "resultado_final", "label": "¿Cálculo total?", "tipo": "number", "correcta": 848.75 }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 1.5 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuál de estas expresiones es correcta? (+1p)",
+        "opciones": [
+            "El aura que envuelve a Mega Lucario en su forma Z megaevolucionada le permite esquivar ataques en combate como si bailara...",
+            "Raboot mejora sus habilidades con los pies, pero al evolucionar a Cinderace, éste no puede aprender Ataque Rápido.",
+            "Los legendarios de Sinnoh, Palkia y Dialga, tienen la capacidad de controlar el espacio y el tiempo...",
+            "La altura de Yveltal supera los 6 metros.",
+            "A fecha de enero de 2026, existen más de 90 Pokémon (sin repetir) que pueden megaevolucionar.",
+            "Morpeko es un Pokémon con especie única (es decir, su combinación de tipos no se repite con otro).",
+            "Se dice que, si tu Pokémon megaevoluciona, la amistad con el entrenador aumenta.",
+            "Todas las respuestas anteriores son incorrectas."
+        ],
+        "correcta": 5
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿A qué Pokémon pertenecen estas descripciones? (+0,25p por cada acierto)",
+        "campos": [
+            { "id": "p1", "label": "a) Ha vivido en la capa de ozono durante cientos de millones de años. Este Pokémon nunca ha tocado el suelo. Como está en constante movimiento, no lo habían descubierto hasta hace poco.", "tipo": "text", "correcta": "Rayquaza" },
+            { "id": "p2", "label": "b) Aparece en lugares habitados por humanos. Conviene tener cuidado al darles de comer, ya que esto podría atraer a cientos de ejemplares. Es muy olvidadizo y no demasiado avispado, pero muchos entrenadores le tienen simpatía por su carácter afable y sincero.", "tipo": "text", "correcta": "Pidove" },
+            { "id": "p3", "label": "c) Se acerca a su enemigo de forma tan súbita como la caída de un rayo, y lo hace trizas con sus afiladas garras.", "tipo": "text", "correcta": "Zeraora" },
+            { "id": "p4", "label": "d) Al encontrarse con un enemigo, hace sonar las escamas de su cola para intimidarlo. Solamente lucha contra aquellos que no se acobardan.", "tipo": "text", "correcta": "Kommo-o" },
+            { "id": "p5", "label": "e) Si su entrenador está contento, desborda energía y baila alegremente dando giros.", "tipo": "text", "correcta": "Kirlia" },
+            { "id": "p6", "label": "f) Se le conoce como 'El ser de la Voluntad' y duerme en el fondo de un lago para equilibrar el mundo.", "tipo": "text", "correcta": "Azelf" },
+            { "id": "p7", "label": "g) Fue creado por los científicos de la Fundación Æther para hacer frente a los ultraentes. Su casco le limita los poderes.", "tipo": "text", "correcta": "Código Cero" },
+            { "id": "p8", "label": "h) Su robustez le permite colaborar con humanos y Copperajah en labores de construcción y minería.", "tipo": "text", "correcta": "Gigalith" }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 2 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Cuál es el número de la Pokédex nacional de estos Pokémon? (1,2p; +0,15p por cada acierto)",
+        "campos": [
+            { "id": "dex_glaceon", "label": "Glaceon", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png", "tipo": "number", "correcta": 471, "puntos": 0.15 },
+            { "id": "dex_comfey", "label": "Comfey", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png", "tipo": "number", "correcta": 764, "puntos": 0.15 },
+            { "id": "dex_escavalier", "label": "Escavalier", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/589.png", "tipo": "number", "correcta": 589, "puntos": 0.15 },
+            { "id": "dex_abra", "label": "Abra", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png", "tipo": "number", "correcta": 63, "puntos": 0.15 },
+            { "id": "dex_corphish", "label": "Corphish", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/341.png", "tipo": "number", "correcta": 341, "puntos": 0.15 },
+            { "id": "dex_wochien", "label": "Wo-Chien", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png", "tipo": "number", "correcta": 1001, "puntos": 0.15 },
+            { "id": "dex_flareon", "label": "Flareon", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png", "tipo": "number", "correcta": 136, "puntos": 0.15 },
+            { "id": "dex_entei", "label": "Entei", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png", "tipo": "number", "correcta": 244, "puntos": 0.15 },
+            { "id": "orden_tamano", "label": "Resultados en orden creciente (+0,3p si todo es correcto):", "tipo": "text", "correcta": "63, 136, 244, 341, 471, 589, 764, 1001", "puntos": 0.3 }
+        ],
+        "puntuacion": { "total": 1.5 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué objeto es necesario para evolucionar a Scyther en Scizor? (+1p)",
+        "opciones": [
+            "Piedra Dura",
+            "Revestimiento Metálico",
+            "Roca del Rey",
+            "Diente Marino"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/hard-stone.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kings-rock.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/deep-sea-tooth.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Identifica los tipos elementales primarios de estos Pokémon: (+0.2p por acierto - hasta 1p)",
+        "campos": [
+            { "id": "tipo_torterra", "label": "Torterra (Tipo 1)", "tipo": "select", "correcta": "Planta" },
+            { "id": "tipo_lucario", "label": "Lucario (Tipo 1)", "tipo": "select", "correcta": "Lucha" },
+            { "id": "tipo_garchomp", "label": "Garchomp (Tipo 1)", "tipo": "select", "correcta": "Dragón" },
+            { "id": "tipo_mimikyu", "label": "Mimikyu (Tipo 1)", "tipo": "select", "correcta": "Fantasma" },
+            { "id": "tipo_spiritomb", "label": "Spiritomb (Tipo 1)", "tipo": "select", "correcta": "Fantasma" }
+        ],
+        "puntuacion": { "por_campo": 0.2, "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿En qué año se lanzaron originalmente estas generaciones en Japón? (+0.25p por acierto - hasta 1p)",
+        "campos": [
+            { "id": "año_gen1", "label": "Generación 1 (Rojo/Verde)", "tipo": "number", "correcta": 1996 },
+            { "id": "año_gen2", "label": "Generación 2 (Oro/Plata)", "tipo": "number", "correcta": 1999 },
+            { "id": "año_gen3", "label": "Generación 3 (Rubí/Zafiro)", "tipo": "number", "correcta": 2002 },
+            { "id": "año_gen4", "label": "Generación 4 (Diamante/Perla)", "tipo": "number", "correcta": 2006 }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Escribe el nombre de los líderes de gimnasio de Kanto según su especialidad: (+0.1p por acierto - hasta 0,8p)",
+        "campos": [
+            { "id": "lider_roca", "label": "Tipo Roca", "tipo": "text", "correcta": "Brock" },
+            { "id": "lider_agua", "label": "Tipo Agua", "tipo": "text", "correcta": "Misty" },
+            { "id": "lider_electrico", "label": "Tipo Eléctrico", "tipo": "text", "correcta": "Lt. Surge" },
+            { "id": "lider_planta", "label": "Tipo Planta", "tipo": "text", "correcta": "Erika" },
+            { "id": "lider_veneno", "label": "Tipo Veneno", "tipo": "text", "correcta": "Koga" },
+            { "id": "lider_psiquico", "label": "Tipo Psíquico", "tipo": "text", "correcta": "Sabrina" },
+            { "id": "lider_fuego", "label": "Tipo Fuego", "tipo": "text", "correcta": "Blaine" },
+            { "id": "lider_tierra", "label": "Tipo Tierra", "tipo": "text", "correcta": "Giovanni" }
+        ],
+        "puntuacion": { "por_campo": 0.1, "total": 0.8 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "¿Cuáles de estos Pokémon pertenecen a la región de Johto? (+1p)",
+        "opciones": [
+            "Ampharos",
+            "Manectric",
+            "Skarmory",
+            "Quagsire",
+            "Luxray",
+            "Donphan"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/310.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png"
+        ],
+        "correctas": [0, 2, 3, 5],
+        "puntuacion": { "por_opcion": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "text",
+        "pregunta": "¿Cómo se llama el Dios Pokémon según la mitología de la saga? (+1p)",
+        "correcta": "Arceus",
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Selecciona los Pokémon que pueden Megaevolucionar: (+1p)",
+        "opciones": [
+            "Dragonite",
+            "Garchomp",
+            "Metagross",
+            "Flygon",
+            "Salamence",
+            "Hydreigon"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png"
+        ],
+        "correctas": [1, 2, 4],
+        "puntuacion": { "por_opcion": 0.33, "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Indica el nombre de las tres aves legendarias de Kanto: (+0,33 por cada respuesta correcta - hasta 1p)",
+        "campos": [
+            { "id": "ave_fuego", "label": "Fuego/Volador", "tipo": "text", "correcta": "Moltres" },
+            { "id": "ave_hielo", "label": "Hielo/Volador", "tipo": "text", "correcta": "Articuno" },
+            { "id": "ave_rayo", "label": "Eléctrico/Volador", "tipo": "text", "correcta": "Zapdos" }
+        ],
+        "puntuacion": { "por_campo": 0.33, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuál es la preevolución de Marill? (+1p)",
+        "opciones": [
+            "Azurill",
+            "Igglybuff",
+            "Cleffa",
+            "Pichu"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/298.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png"
+        ],
+        "correcta": 0,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "text",
+        "pregunta": "¿Cuál es el único Pokémon que puede aprender el movimiento 'Esquema' (Sketch)? (+1p)",
+        "correcta": "Smeargle",
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "¿Qué Pokémons forman parte del 'Trío de las Nubes'? (Teselia): (+0,33p cada uno)",
+        "opciones": ["Articuno", "Zapdos", "Moltres", "Suicune", "Entei", "Raikou", "Thundurus", "Landorus", "Tornadus", "Enamorus"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png"
+        ],
+        "correctas": [6, 7, 8],
+        "puntuacion": { "por_opcion": 0.33, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué Pokémon es el líder del Trío de las Bestias de Johto? (+1p)",
+        "opciones": ["Suicune", "Raikou", "Entei", "Ho-Oh"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png"
+        ],
+        "correcta": 3,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿A qué nivel evolucionan estos Pokémon inicialmente? (1,2p; +0,3p por cada acierto)",
+        "campos": [
+            { "id": "evo_bulbasaur", "label": "Bulbasaur", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png", "tipo": "number", "correcta": 16 },
+            { "id": "evo_totodile", "label": "Totodile", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png", "tipo": "number", "correcta": 18 },
+            { "id": "evo_gastly", "label": "Gastly", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png", "tipo": "number", "correcta": 25 },
+            { "id": "evo_larvitar", "label": "Larvitar", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png", "tipo": "number", "correcta": 30 }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Qué Pokémon resucita de cada uno de estos fósiles? (+1,2p)",
+        "campos": [
+            { "id": "f_domo", "label": "Fósil Domo", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dome-fossil.png", "tipo": "text", "correcta": "Kabuto" },
+            { "id": "f_heliz", "label": "Fósil Hélix", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/helix-fossil.png", "tipo": "text", "correcta": "Omanyte" },
+            { "id": "f_ambar", "label": "Ámbar Viejo", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/old-amber.png", "tipo": "text", "correcta": "Aerodactyl" },
+            { "id": "f_garra", "label": "Fósil Garra", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/claw-fossil.png", "tipo": "text", "correcta": "Anorith" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué habilidad permite a un Pokémon de tipo Acero ser envenenado? (+1p)",
+        "opciones": [
+            "Muro Mágico",
+            "Corrosión",
+            "Piel Tosca",
+            "Antídoto"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/286.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Indica la evolución por amistad (Felicidad) de estos Pokémon: (+1p)",
+        "campos": [
+            { "id": "evo_golbat", "label": "Golbat evoluciona a...", "tipo": "text", "correcta": "Crobat" },
+            { "id": "evo_chansey", "label": "Chansey evoluciona a...", "tipo": "text", "correcta": "Blissey" },
+            { "id": "evo_munchlax", "label": "Munchlax evoluciona a...", "tipo": "text", "correcta": "Snorlax" },
+            { "id": "evo_riolu", "label": "Riolu evoluciona a...", "tipo": "text", "correcta": "Lucario" }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuál de estos Pokémon es el más pesado (999.9 kg)? (+1p)",
+        "opciones": [
+            "Wailord",
+            "Snorlax",
+            "Cosmoem",
+            "Groudon"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuántos Pokémon puedes evolucionar en el mismo turno que los pones en juego? (+1p)",
+        "opciones": [
+            "Todos los que quieras",
+            "Solo uno por turno",
+            "Ninguno (debes esperar un turno)",
+            "Solo si usas una carta de Entrenador"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rare-candy.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Selecciona las categorías que existen dentro de las cartas de Entrenador en el TCG: (+1p)",
+        "opciones": [
+            "Objeto",
+            "Partidario",
+            "Estadio",
+            "Habilidad",
+            "Herramienta Pokémon",
+            "Ataque"
+        ],
+        "correctas": [0, 1, 2, 4],
+        "puntuacion": { "por_opcion": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "En el TCG, ¿Qué condición especial requiere que la carta se gire 180 grados (boca abajo)? (+1p)",
+        "opciones": [
+            "Confundido",
+            "Paralizado",
+            "Dormido",
+            "Quemado"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/54.gif",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/25.gif",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/39.gif",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/4.gif"
+        ],
+        "correcta": 0,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Completa los números básicos del reglamento del TCG: (+1p)",
+        "campos": [
+            { "id": "cartas_mazo", "label": "¿Cuántas cartas tiene un mazo estándar?", "tipo": "number", "correcta": 60 },
+            { "id": "cartas_premio", "label": "¿Cuántas cartas de premio se colocan al inicio?", "tipo": "number", "correcta": 6 },
+            { "id": "banca_max", "label": "¿Cuántos Pokémon caben máximo en la Banca?", "tipo": "number", "correcta": 5 },
+            { "id": "mano_inicial", "label": "¿Cuántas cartas robas al empezar?", "tipo": "number", "correcta": 7 }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Sobre la rotación y legalidad en el Formato Estándar actual: (+1p)",
+        "campos": [
+            { "id": "tcg_reg_mark", "label": "El 10 de abril de 2026 rotó una serie de cartas con la letra de regulación...", "tipo": "text", "correcta": "G" },
+            { "id": "tcg_deck_size", "label": "¿Cuántas copias máximo puedes llevar de una carta con el mismo nombre?", "tipo": "number", "correcta": 4 },
+            { "id": "tcg_prize_ex", "label": "¿Cuántas cartas de Premio robas al debilitar a un Pokémon 'ex'?", "tipo": "number", "correcta": 2 },
+            { "id": "tcg_prize_vmax", "label": "¿Y al debilitar a un Pokémon megaevolucionado?", "tipo": "number", "correcta": 3 }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Selecciona las acciones que puedes realizar en el PRIMER TURNO de la partida (si vas primero): (+1p)",
+        "opciones": [
+            "Atacar",
+            "Poner tantos básicos en banca (hasta 8)",
+            "Jugar una carta de Partidario",
+            "Unir una Energía a un Pokémon",
+            "Evolucionar un Pokémon",
+            "Retirar a tu Pokémon Activo"
+        ],
+        "correctas": [3, 5],
+        "puntuacion": { "por_opcion": 0.5, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "En el TCG, por norma general, ¿cuánto daño extra hace un ataque si el rival tiene debilidad a ese tipo? (+1p)",
+        "opciones": [
+            "+20 puntos de daño",
+            "+30 puntos de daño",
+            "El daño se multiplica x2",
+            "El daño se multiplica x4"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Selecciona los objetos que aumentan la VELOCIDAD del Pokémon que los lleva: (+1p)",
+        "opciones": [
+            "Pañuelo Elección (Choice Scarf)",
+            "Cinta Elegida (Choice Band)",
+            "Garra Rápida (Quick Claw)",
+            "Cola Férrea",
+            "Incienso Suave",
+            "Mineral Evolutivo"
+        ],
+        "correctas": [0, 2],
+        "puntuacion": { "por_opcion": 0.5, "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Qué objeto necesitan estos Pokémon para evolucionar? (+1,2p)",
+        "campos": [
+            { "id": "item_vulpix", "label": "Vulpix de Alola", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png", "tipo": "text", "correcta": "Piedra Hielo" },
+            { "id": "item_murkrow", "label": "Murkrow", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png", "tipo": "text", "correcta": "Piedra Noche" },
+            { "id": "item_roselia", "label": "Roselia", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png", "tipo": "text", "correcta": "Piedra Alba" },
+            { "id": "item_lampent", "label": "Lampent", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/608.png", "tipo": "text", "correcta": "Piedra Noche" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "En el TCG actual, ¿qué característica principal diferencia a los 'Pokémon ex' Teracristal? (+1p)",
+        "opciones": [
+            "No tienen debilidad",
+            "No reciben daño en la banca",
+            "Sus ataques siempre hacen x2",
+            "Pueden evolucionar el primer turno"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Escribe la Habilidad característica de estos Pokémon: (+1p)",
+        "campos": [
+            { "id": "hab_kyogre", "label": "Kyogre", "tipo": "text", "correcta": "Llovizna" },
+            { "id": "hab_groudon", "label": "Groudon", "tipo": "text", "correcta": "Sequía" },
+            { "id": "hab_rayquaza", "label": "Rayquaza", "tipo": "text", "correcta": "Esclusa de aire" },
+            { "id": "hab_shedinja", "label": "Shedinja", "tipo": "text", "correcta": "Superguarda" }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué Pokémon tiene un diseño basado en un saco de boxeo (y se dice que vive en cuevas oscuras)? (+1p)",
+        "opciones": [
+            "Hitmonlee",
+            "Wobbuffet",
+            "Makuhita",
+            "Poliwrath"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/296.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué Pokémon, considerado muy débil, fue clave para que Sejun Park ganara el Mundial de 2014? (+1p)",
+        "opciones": [
+            "Pikachu",
+            "Pachirisu",
+            "Dedenne",
+            "Emolga"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/587.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "En el VCG del mundial... (+1,2p)",
+        "campos": [
+            { "id": "vgc_pkmn_equipo", "label": "¿De cuánto se debe fomar un equipo Pokémon?", "tipo": "number", "correcta": 6 },
+            { "id": "vgc_pkmn_combate", "label": "¿Cuántos Pokémon seleccionas para combatir en cada ronda?", "tipo": "number", "correcta": 4 },
+            { "id": "vgc_nivel", "label": "¿A qué nivel se ajustan todos los Pokémon automáticamente?", "tipo": "number", "correcta": 50 },
+            { "id": "vgc_tiempo", "label": "¿De cuántos segundos dispones por turno para elegir ataque?", "tipo": "number", "correcta": 45 }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Selecciona las reglas que son VERDADERAS en el formato VGC actual: (+1p)",
+        "opciones": [
+            "No puedes tener dos Pokémon con el mismo número de Pokédex",
+            "Puedes equipar el mismo objeto en varios Pokémon",
+            "No puedes repetir objetos (Item Clause)",
+            "Se permiten todos los Pokémon Singulares (como Mew o Celebi)",
+            "Los combates son siempre en formato Dobles",
+            "Puedes cambiar los movimientos entre combates"
+        ],
+        "correctas": [0, 2, 4],
+        "puntuacion": { "por_opcion": 0.333, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿En qué ciudad se celebró en 2022 el primer Mundial de Pokémon fuera de Norteamérica? (+1p)",
+        "opciones": [
+            "Tokio",
+            "Londres",
+            "París",
+            "Berlín",
+            "Sevilla",
+            "Bilbao",
+            "Roma",
+            "Minsk"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Escribe el nombre de estas estrategias o mecánicas de VGC: (+1p)",
+        "campos": [
+            { "id": "vgc_tr", "label": "Movimiento que hace que los lentos ataquen primero", "tipo": "text", "correcta": "Espacio Raro" },
+            { "id": "vgc_tail", "label": "Movimiento que dobla la velocidad de tu equipo 4 turnos", "tipo": "text", "correcta": "Viento Afín" },
+            { "id": "vgc_protect", "label": "Movimiento defensivo más usado en dobles para tantear", "tipo": "text", "correcta": "Protección" }
+        ],
+        "puntuacion": { "por_campo": 0.333, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cómo se llaman los eventos en tiendas de liga local donde recibes una caja con 4 sobres y un mazo de 40 cartas para jugar antes que nadie? (+1p)",
+        "opciones": [
+            "League Challenge",
+            "Regional Championship",
+            "Prerelease",
+            "Prelance",
+            "League Cup",
+            "Gym Leader Challenge"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Cómo se llaman estos accesorios del TCG? (+1,2p)",
+        "campos": [
+            { "id": "acc_fundas", "label": "Fundas protectoras para las cartas", "tipo": "text", "correcta": "Sleeves" },
+            { "id": "acc_tapete", "label": "Superficie de tela para no rayar las cartas", "tipo": "text", "correcta": "Playmat" },
+            { "id": "acc_dados", "label": "Se usan para marcar el daño en el TCG o decidir cara o cruz, pero son más fáciles de lanzar", "tipo": "text", "correcta": "Dados" },
+            { "id": "acc_deckbox", "label": "Caja para guardar y transportar el mazo", "tipo": "text", "correcta": "Deck box" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Selecciona las normas que son verdaderas y que se deben cumplir en un torneo oficial (Challenge o Cup) de liga local: (+1p)",
+        "opciones": [
+            "Llevar una lista escrita de tu mazo (Decklist)",
+            "Usar cartas 'falsas' o fotocopias (Proxies) si no tienes la original",
+            "Tener un ID de jugador (Play! ID) vinculado a tu cuenta",
+            "Ofrecer al rival que corte tu mazo después de barajar",
+            "Poder mirar el mazo del rival cuando quieras",
+            "Se recomienda llevar fundas que no sean transparentes por detrás"
+        ],
+        "correctas": [0, 2, 3, 5],
+        "puntuacion": { "por_opcion": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cómo se llaman los puntos que acumulas ganando torneos en tiendas locales para clasificar al Mundial? (+1p)",
+        "opciones": [
+            "Battle Points (BP)",
+            "Championship Points (CP)",
+            "PokéDollars",
+            "Experience Points (XP)"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Por qué Pikachu fue el Pokémon inicial de Ash según empezó su aventura? (+1p)",
+        "opciones": [
+            "Porque Ash lo eligió así mismo",
+            "Por un obsequio de parte del profesor Oak",
+            "Porque llegó tarde y no quedaban otros",
+            "Porque Gary se lo aconsejó"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/town-map.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sweet-heart.png"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Cuáles son estos Pokémon que Ash utilizó en la temporada 23 (Viajes Definitivos)? (+1,2p)",
+        "campos": [
+            { "id": "ash_sir", "label": "Opción 1", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png", "tipo": "text", "correcta": "Sirfetch'd" },
+            { "id": "ash_dragon", "label": "Opción 2", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png", "tipo": "text", "correcta": "Dragonite" },
+            { "id": "ash_ghost", "label": "Opción 3", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png", "tipo": "text", "correcta": "Gengar" },
+            { "id": "ash_fossil", "label": "Opción 4", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/882.png", "tipo": "text", "correcta": "Dracovish" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "De los siguientes, ¿Qué Pokémon forman principalmente del clásico Team Rocket? (+1p)",
+        "opciones": [
+            "Arbok",
+            "Weezing",
+            "Wobbuffet",
+            "Meowth",
+            "Victreebel",
+            "Psyduck"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+        ],
+        "correctas": [2, 3],
+        "puntuacion": { "por_opcion": 0.5, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué baya restaura un 33% de PS pero confunde al Pokémon si a este no le gusta el sabor amargo? (+1p)",
+        "opciones": [
+            "Baya Aranja",
+            "Baya Guayaba",
+            "Baya Wiki",
+            "Baya Cidra"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oran-berry.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aguav-berry.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wiki-berry.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sitrus-berry.png"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿En qué región se enfrentó Ash a estos poderosos rivales? (+1,2p)",
+        "campos": [
+            { "id": "rival_gary", "label": "Gary Oak (su primer rival)", "tipo": "text", "correcta": "Kanto" },
+            { "id": "rival_paul", "label": "Paul (Polo) y su Electivire", "tipo": "text", "correcta": "Sinnoh" },
+            { "id": "rival_alain", "label": "Alain y su Mega-Charizard X", "tipo": "text", "correcta": "Kalos" },
+            { "id": "rival_gladion", "label": "Gladio y su Silvally", "tipo": "text", "correcta": "Alola" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Selecciona los formatos oficiales o populares que se juegan en el TCG: (+1p)",
+        "opciones": [
+            "Estándar (Standard)",
+            "Expandido (Expanded)",
+            "Gym Leader Challenge (GLC)",
+            "Unlimited (Sin restricciones)",
+            "Formato Turbo",
+            "Modo Aventura"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/fast-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heavy-ball.png"
+        ],
+        "correctas": [0, 1, 2, 3],
+        "puntuacion": { "por_opcion": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Cómo se llama la evolución de estos Pokémon Bebé? (+1,2p)",
+        "campos": [
+            { "id": "baby_pichu", "label": "Pichu evoluciona a", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png", "tipo": "text", "correcta": "Pikachu" },
+            { "id": "baby_togepi", "label": "Togepi evoluciona a", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png", "tipo": "text", "correcta": "Togetic" },
+            { "id": "baby_tyrogue", "label": "Riolu evoluciona a", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png", "tipo": "text", "correcta": "Lucario" },
+            { "id": "baby_mime", "label": "Mime Jr. evoluciona a", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png", "tipo": "text", "correcta": "Mr. Mime" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué Pokémon es famoso por su habilidad 'Chorro Arena' (Sand Stream) en el competitivo desde hace generaciones? (+1p)",
+        "opciones": [
+            "Gigalith",
+            "Hippowdon",
+            "Tyranitar",
+            "Excadrill"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/526.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿A qué Pokémon dejó marchar Ash en un bosque para que liderara a su grupo y protegiera a otros de su especie? (+1p)",
+        "opciones": [
+            "Pidgeot",
+            "Butterfree",
+            "Charizard",
+            "Lapras"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
+        ],
+        "correcta": 0,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué objeto misterioso encontró Ash en las Islas Naranja que el Profesor Oak no podía abrir? (+1p)",
+        "opciones": [
+            "La Poké Ball de Cristal",
+            "La GS Ball",
+            "El Orbe Plateado",
+            "La Piedra Eterna de Ash"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Completa los términos usados en torneos de TCG: (+1p)",
+        "campos": [
+            { "id": "tcg_mulligan", "label": "Si no robas un Pokémon básico al inicio, haces un", "tipo": "text", "correcta": "mulligan" },
+            { "id": "tcg_topdeck", "label": "Robar justo la carta que necesitabas para ganar", "tipo": "text", "correcta": "topdeck" },
+            { "id": "tcg_bench", "label": "Zona donde están tus Pokémon que no están activos", "tipo": "text", "correcta": "banca" },
+            { "id": "tcg_tech", "label": "Carta añadida al mazo para ganar a un mazo específico", "tipo": "text", "correcta": "tech" }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cómo se llama el 'Pokémon' glitch que aparecía en la costa de Isla Canela tras hablar con el viejo de Ciudad Verde? (+1p)",
+        "opciones": [
+            "MissingNo.",
+            "MewThree",
+            "'M",
+            "Bad EGG"
+        ],
+        "correcta": 0,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Qué prioridad tienen estos movimientos en combate? (+1,2p)",
+        "campos": [
+            { "id": "prio_ataque_rapido", "label": "Ataque Rápido (Quick Attack)", "tipo": "number", "correcta": 1 },
+            { "id": "prio_sorpresa", "label": "Sorpresa (Fake Out)", "tipo": "number", "correcta": 3 },
+            { "id": "prio_proteccion", "label": "Protección (Protect)", "tipo": "number", "correcta": 4 },
+            { "id": "prio_espacio_raro", "label": "Espacio Raro (Trick Room)", "tipo": "number", "correcta": -7 }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Selecciona los Pokémon que son 'Formas Paradoja' del FUTURO (Escarlata/Púrpura): (+1p)",
+        "opciones": [
+            "Ferrosaco (Iron Bundle)",
+            "Bramaluna (Roaring Moon)",
+            "Ferropalmas (Iron Hands)",
+            "Colargentea (Slither Wing)",
+            "Ferropuño (Iron Valiant)",
+            "Pelarena (Sandy Shocks)"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/992.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/988.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png"
+        ],
+        "correctas": [0, 2, 4],
+        "puntuacion": { "por_opcion": 0.333, "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Sobre el final de la serie 'Viajes Pokémon': (+1,5p)",
+        "campos": [
+            { "id": "ash_final_rival", "label": "¿A qué campeón derrotó Ash en la final del mundial?", "tipo": "text", "correcta": "Lionel" },
+            { "id": "ash_final_team", "label": "¿Qué Pokémon dio el golpe final en esa batalla?", "tipo": "text", "correcta": "Pikachu" },
+            { "id": "ash_final_strike", "label": "¿Contra qué Pokémon del último rival de Ash recibió el golpe final?", "tipo": "text", "correcta": "Charizard" },
+            { "id": "ash_final_region", "label": "¿En qué región se celebró el Torneo de Maestros?", "tipo": "text", "correcta": "Galar" },
+            { "id": "hrz_new", "label": "¿Cómo se llama la nueva protagonista (horizontes)?", "tipo": "text", "correcta": "Liko" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.5 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "En el TCG, ¿qué nombre reciben las cartas con el borde plateado que son, en su mayoría, Pokémon en su etapa final y dan 2 cartas de premio? (+1p)",
+        "opciones": [
+            "Pokémon V",
+            "Pokémon ex",
+            "Pokémon GX",
+            "Pokémon Prime"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "Si un Pokémon de tipo FUEGO puro se Teracristaliza a tipo FUEGO (Teraestallido), ¿qué ocurre con sus ataques de ese tipo? (+1p)",
+        "opciones": [
+            "No cambia nada",
+            "Su potencia aumenta x1.5",
+            "Su potencia aumenta x2 (Adaptable)",
+            "El ataque siempre quema"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuál fue el primer Pokémon Singular de la historia, añadido secretamente al código por Shigeki Morimoto? (+1p)",
+        "opciones": [
+            "Mew",
+            "Celebi",
+            "Arceus",
+            "Deoxys"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png"
+        ],
+        "correcta": 0,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Identifica las estadísticas BASE de las formas de Deoxys: (+1,2p)",
+        "campos": [
+            { "id": "deoxys_atk", "label": "Ataque base de Deoxys (Forma Ataque)", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10001.png", "tipo": "number", "correcta": 180 },
+            { "id": "deoxys_def", "label": "Defensa base de Deoxys (Forma Defensa)", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10002.png", "tipo": "number", "correcta": 160 },
+            { "id": "deoxys_vel", "label": "Velocidad base de Deoxys (Forma Velocidad)", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10003.png", "tipo": "number", "correcta": 180 }
+        ],
+        "puntuacion": { "por_campo": 0.4, "total": 1.2 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "¿Cuáles de estos Pokémon singulares han protagonizado una película con Ash?: (+1p)",
+        "opciones": [
+            "Zoroark",
+            "Lucario",
+            "Jirachi",
+            "Volcanion",
+            "Hoopa",
+            "Zeraora"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png"
+        ],
+        "correctas": [2, 3, 4, 5],
+        "puntuacion": { "por_opcion": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué objeto debe llevar Arceus para cambiar su tipo al tipo Hada? (+1p)",
+        "opciones": [
+            "Tabla Duende (Pixie Plate)",
+            "Tabla Cielo (Sky Plate)",
+            "Tabla Terror (Spooky Plate)",
+            "Tabla Linfa (Splash Plate)"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pixie-plate.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sky-plate.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/spooky-plate.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/splash-plate.png"
+        ],
+        "correcta": 0,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Identifica a estos Pokémon Singulares de generaciones recientes: (+1p)",
+        "campos": [
+            { "id": "singular_monkey", "label": "El simio de Galar que usa 'Cura Selvática'", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/893.png", "tipo": "text", "correcta": "Zarude" },
+            { "id": "singular_poison", "label": "El líder de las 'Tres Compatibles' de Kitakami", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1025.png", "tipo": "text", "correcta": "Pecharunt" },
+            { "id": "singular_steel", "label": "El Pokémon artificial creado hace 500 años", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png", "tipo": "text", "correcta": "Magearna" }
+        ],
+        "puntuacion": { "por_campo": 0.333, "total": 1 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "¿Qué Pokémon han sido 'Pokémon de Portada' en juegos de la serie principal? (+1p)",
+        "opciones": ["Lugia", "Arcanine", "Rayquaza", "Lucario", "Zekrom", "Xerneas", "Zoroark", "Koraidon"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png"
+        ],
+        "correctas": [0, 2, 4, 5, 7],
+        "puntuacion": { "por_opcion": 0.2, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué nombre recibe el fenómeno del anime donde Ash y su Greninja se sincronizan sin necesidad de Piedra Activadora? (+1p)",
+        "opciones": ["Mega-Evolución Sincro", "Fenómeno Lazo", "Greninja-Z", "Efecto Vínculo"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mega-ring.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/z-ring.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/soothe-bell.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿A qué Pokémon evoluciona Eevee? (+1,8p)",
+        "campos": [
+            { "id": "eevee_gen2_1", "label": "Tipo Siniestro", "tipo": "text", "correcta": "Umbreon" },
+            { "id": "eevee_gen2_2", "label": "Tipo Psíquico", "tipo": "text", "correcta": "Espeon" },
+            { "id": "eevee_gen4_1", "label": "Tipo Hielo", "tipo": "text", "correcta": "Glaceon" },
+            { "id": "eevee_gen4_2", "label": "Tipo Planta", "tipo": "text", "correcta": "Leafeon" },
+            { "id": "eevee_gen6", "label": "Tipo Hada", "tipo": "text", "correcta": "Sylveon" },
+            { "id": "eevee_genf", "label": "Tipo Roca", "tipo": "text", "correcta": "No hay" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.8 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "En el TCG, ¿qué condiciones pueden causar que un Pokémon sea 'Retirado' de la Zona Activa? (+1p)",
+        "opciones": [
+            "Pagar su coste de retirada en energías",
+            "Usar una carta de 'Cambio'",
+            "Evolucionar al Pokémon activo",
+            "Que el rival use 'Órdenes de Jefes'",
+            "Estar bajo el estado 'Dormido'"
+        ],
+        "correctas": [0, 1, 3],
+        "puntuacion": { "por_opcion": 0.333, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuál es el único Pokémon capaz de aprender el movimiento 'Esquema' (Sketch) de forma permanente? (+1p)",
+        "opciones": ["Ditto", "Smeargle", "Mew", "Chatot"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Cómo se llaman los 'Tres Sabios' de Teselia (Líderes de Gimnasio)?: (+1,5p)",
+        "campos": [
+            { "id": "sabio_fuego", "label": "Líder de tipo Fuego", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/514.png", "tipo": "text", "correcta": "Zeo" },
+            { "id": "sabio_agua", "label": "Líder de tipo Agua", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/516.png", "tipo": "text", "correcta": "Maíz" },
+            { "id": "sabio_planta", "label": "Líder de tipo Planta", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/512.png", "tipo": "text", "correcta": "Millo" }
+        ],
+        "puntuacion": { "por_campo": 0.5, "total": 1.5 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "¿Qué efectos produce el clima de 'Lluvia' en combate? (+1p)",
+        "opciones": [
+            "Potencia los movimientos de tipo Agua un 50%",
+            "Reduce la potencia de los movimientos de tipo Fuego un 50%",
+            "Trueno y Vendaval nunca fallan",
+            "Resta PS a los Pokémon que no son tipo Agua cada turno",
+            "Activa la habilidad 'Nado Rápido'",
+            "Cura a los Pokémon tipo Planta"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/water-gem.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/fire-gem.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/thunder-stone.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/black-sludge.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mystic-water.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/miracle-seed.png"
+        ],
+        "correctas": [0, 1, 2, 4],
+        "puntuacion": { "por_opcion": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "En el anime, ¿qué Pokémon utilizó el Team Rocket durante casi toda la región de Alola como su base de operaciones 'viviente'? (+1p)",
+        "opciones": ["Mareanie", "Bewear", "Mimikyu", "Stufful"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/760.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Sobre las MT (Máquinas Técnicas): (+1p)",
+        "campos": [
+            { "id": "mt_01", "label": "En la Gen 1, la MT01 era", "tipo": "text", "correcta": "Megapuño" },
+            { "id": "mt_flash", "label": "El movimiento que ilumina cuevas (MO05 en Gen 1)", "tipo": "text", "correcta": "Destello" },
+            { "id": "mt_rompe", "label": "El movimiento que rompe rocas agrietadas", "tipo": "text", "correcta": "Golpe Roca" },
+            { "id": "mt_fly", "label": "La MO que permite viajar entre ciudades", "tipo": "text", "correcta": "Vuelo" }
+        ],
+        "puntuacion": { "por_campo": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Identifica a los miembros del 'Alto Mando' de la región de Sinnoh: (+1p)",
+        "opciones": ["Alecrán", "Gaia", "Fausto", "Delos", "Cintia", "Lance"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/net-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/earth-plate.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magmarizer.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/spell-tag.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
+        ],
+        "correctas": [0, 1, 2, 3],
+        "puntuacion": { "por_opcion": 0.25, "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Cuál es la habilidad de estos iniciales? (+1,2p)",
+        "campos": [
+            { "id": "ha_sprigatito", "label": "Meowscarada", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png", "tipo": "text", "correcta": "Espesura" },
+            { "id": "ha_fuecoco", "label": "Skeledirge", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png", "tipo": "text", "correcta": "Mar Llamas" },
+            { "id": "ha_quaxly", "label": "Quaquaval", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png", "tipo": "text", "correcta": "Torrente" },
+            { "id": "ha_cinderace", "label": "Cinderace", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png", "tipo": "text", "correcta": "Mar Llamas" }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Estadísticas Base (BS): Adivina el valor de la estadística más alta de estos Pokémon: (+1,5p)",
+        "campos": [
+            { "id": "bs_blissey", "label": "PS Base de Blissey", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png", "tipo": "number", "correcta": 255 },
+            { "id": "bs_shuckle", "label": "Defensa Base de Shuckle", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png", "tipo": "number", "correcta": 230 },
+            { "id": "bs_regieleki", "label": "Velocidad Base de Regieleki", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png", "tipo": "number", "correcta": 200 },
+            { "id": "bs_kartana", "label": "Ataque Base de Kartana", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png", "tipo": "number", "correcta": 181 },
+            { "id": "bs_deoxys", "label": "Atq. Esp Base de Deoxys (Ataque)", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10001.png", "tipo": "number", "correcta": 180 }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.5 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuál fue el motivo principal por el que Paul liberó a su Chimchar, permitiendo que Ash lo adoptara? (+1p)",
+        "opciones": ["No le gustaba su color", "Lo consideraba débil", "Quería cambiarlo por un Torterra", "El Pokémon se escapó solo"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/fire-stone.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rare-candy.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/escape-rope.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "Durante el anime en los capítulos de Sinnoh, ¿qué usaba la Cazadora J para capturar Pokémon y convertirlos en estatuas? (+1p)",
+        "opciones": ["Poké Balls de oro", "Un rayo petrificador", "Redes eléctricas", "Ataques de su Salamence"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/nugget.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/iron.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magnet.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuál era el objetivo final de Helio (Cyrus) al invocar a Dialga y Palkia en la Columna Lanza? (+1p)",
+        "opciones": ["Controlar el tiempo mediante su control", "Destruir el mundo actual para crear uno nuevo sin emociones", "Robar todos los Pokémon de Sinnoh para utilizarlos", "Convertirse en un Pokémon"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/adamant-orb.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lustrous-orb.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/town-map.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/smoke-ball.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "En el anime, ¿en qué temporada y episodio capturó (o evolucionó) Ash a estos Pokémon? (T00 E00) (+1p)",
+        "campos": [
+            { 
+                "id": "ash_riolu_ep", 
+                "label": "Riolu", 
+                "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png",
+                "tipo": "text", 
+                "correcta": "T23 E21" 
+            },
+            { 
+                "id": "ash_dragonite_ep", 
+                "label": "Dragonite", 
+                "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+                "tipo": "text", 
+                "correcta": "T23 E10" 
+            },
+            { 
+                "id": "ash_lucario_ep", 
+                "label": "Lucario", 
+                "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+                "tipo": "text", 
+                "correcta": "T23 E45" 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.333, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cómo se llama el movimiento característico del Golisopod de Guzma que solía molestar a Ash en Alola? (+1p)",
+        "opciones": ["Escaramuza", "Hidroariete", "Pin Misil", "Golpe Mordaza"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-bug.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-water.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-dark.png"
+        ],
+        "correcta": 0,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Qué Pokémon legendario utilizaba Ghetsis en el anime para intentar congelar la región de Teselia? (+1p)",
+        "opciones": ["Reshiram", "Zekrom", "Kyurem Blanco", "Kyurem Negro"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/light-stone.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dark-stone.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dna-splicers.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/never-melt-ice.png"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Por qué el Meowth del Team Rocket aprendió a hablar el lenguaje humano? (+1p)",
+        "opciones": ["Por un experimento de Giovanni", "Para impresionar a una Meowth hembra", "Nació así", "Comió una baya extraña"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/rare-candy.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/love-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sweet-heart.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/persim-berry.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Capturas de Ash en Viajes Pokémon: Indica Temporada y Episodio (Ej: T00 E00) (+6p)",
+        "campos": [
+            { 
+                "id": "ash_riolu_ep", "label": "Riolu (Huevo)", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png",
+                "tipo": "text", "correcta": "T23 E21" 
+            },
+            { 
+                "id": "ash_dragonite_ep", "label": "Dragonite", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+                "tipo": "text", "correcta": "T23 E10" 
+            },
+            { 
+                "id": "ash_gengar_ep", "label": "Gengar", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+                "tipo": "text", "correcta": "T23 E16" 
+            },
+            { 
+                "id": "ash_farfetchd_ep", "label": "Farfetch'd de Galar", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10166.png",
+                "tipo": "text", "correcta": "T23 E27" 
+            },
+            { 
+                "id": "ash_dracovish_ep", "label": "Dracovish", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/882.png",
+                "tipo": "text", "correcta": "T24 E02" 
+            },
+            { 
+                "id": "ash_lucario_evo", "label": "Evolución a Lucario", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+                "tipo": "text", "correcta": "T23 E45" 
+            }
+        ],
+        "puntuacion": { "por_campo": 1, "total": 6 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Hitos Históricos del Anime: ¿En qué episodio ocurrió? (Ej: T00 E00) (+3p)",
+        "campos": [
+            { 
+                "id": "ash_greninja_lib", "label": "Ash libera a Greninja (XYZ)", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
+                "tipo": "text", "correcta": "T19 E46" 
+            },
+            { 
+                "id": "ash_campeon_alola", "label": "Ash se proclama Campeón de Alola", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/z-ring.png",
+                "tipo": "text", "correcta": "T22 E47" 
+            },
+            { 
+                "id": "ash_charizard_lib", "label": "Ash deja a Charizard en el Valle Charicífico", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+                "tipo": "text", "correcta": "T03 E18" 
+            }
+        ],
+        "puntuacion": { "por_campo": 1, "total": 3 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Evoluciones Finales del Equipo Maestro: (Ej: T00 E00) (+4p)",
+        "campos": [
+            { 
+                "id": "evo_sirfetchd", "label": "Farfetch'd evoluciona a Sirfetch'd", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png",
+                "tipo": "text", "correcta": "T24 E12" 
+            },
+            { 
+                "id": "evo_incineroar", "label": "Torracat evoluciona a Incineroar", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
+                "tipo": "text", "correcta": "T22 E51" 
+            },
+            { 
+                "id": "evo_sceptile", "label": "Grovyle evoluciona a Sceptile", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png",
+                "tipo": "text", "correcta": "T09 E16" 
+            },
+            { 
+                "id": "evo_infernape", "label": "Monferno evoluciona a Infernape    ", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png",
+                "tipo": "text", "correcta": "T13 E06" 
+            }
+        ],
+        "puntuacion": { "por_campo": 1, "total": 4 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Identifica el objeto ideal para cada situación técnica: (+1,5p)",
+        "campos": [
+            { 
+                "id": "obj_vgc_1", "label": "Objeto que ignora los cambios de precisión del rival y el efecto de redirección", 
+                "tipo": "text", "correcta": "Gafas de Filtrado" 
+            },
+            { 
+                "id": "obj_vgc_2", "label": "Objeto que protege al portador de efectos secundarios de movimientos (como retroceso o parálisis)", 
+                "tipo": "text", "correcta": "Capa Furtiva" 
+            },
+            { 
+                "id": "obj_vgc_3", "label": "Objeto que permite atacar antes si el portador tiene menos del 25% de PS", 
+                "tipo": "text", "correcta": "Baya Aslac" 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.5, "total": 1.5 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Matemáticas de Combate: Estadísticas Base (BST): (+1,5p)",
+        "campos": [
+            { 
+                "id": "bs_speed_eleki", "label": "Velocidad Base de Regieleki", 
+                "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png",
+                "tipo": "number", "correcta": 200 
+            },
+            { 
+                "id": "bs_hp_blissey", "label": "PS Base de Blissey", 
+                "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
+                "tipo": "number", "correcta": 255 
+            },
+            { 
+                "id": "bs_atk_kartana", "label": "Ataque Base de Kartana", 
+                "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png",
+                "tipo": "number", "correcta": 181 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.5, "total": 1.5 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Identifica la habilidad por su efecto: (+1,2p)",
+        "campos": [
+            { 
+                "id": "hab_1", "label": "Reduce a la mitad el daño de ataques supereficaces", 
+                "tipo": "text", "correcta": "Filtro" 
+            },
+            { 
+                "id": "hab_2", "label": "Impide que el rival use movimientos de prioridad", 
+                "tipo": "text", "correcta": "Cuerpo Lívido" 
+            },
+            { 
+                "id": "hab_3", "label": "El Pokémon recupera PS si le golpea un movimiento de tipo Agua", 
+                "tipo": "text", "correcta": "Absorbe Agua" 
+            },
+            { 
+                "id": "hab_4", "label": "Ignora los cambios en las estadísticas del oponente", 
+                "tipo": "text", "correcta": "Ignorante" 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿Qué ataques poseen estos efectos secundarios? (+1p)",
+        "campos": [
+            { 
+                "id": "mov_1", "label": "Movimiento con mayor probabilidad de golpe crítico (+2 niveles)", 
+                "tipo": "text", "correcta": "Tajo Umbrío" 
+            },
+            { 
+                "id": "mov_2", "label": "Movimiento de tipo Lucha que baja las defensas del usuario", 
+                "tipo": "text", "correcta": "A Bocajarro" 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.5, "total": 1 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "En el TCG, ¿cuántas cartas de Premio se colocan al inicio de una partida estándar? (+0,1p)",
+        "opciones": ["3", "4", "6", "7"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png"
+        ],
+        "correcta": 2,
+        "puntuacion": { "total": 0.1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Identifica las reglas de estas cartas especiales: (+1,5p)",
+        "campos": [
+            { 
+                "id": "tcg_ex_rule", "label": "Si un Pokémon 'ex' queda Fuera de Combate, el rival toma", 
+                "tipo": "text", "correcta": "2 cartas de premio" 
+            },
+            { 
+                "id": "tcg_vmax_rule", "label": "Si un Pokémon 'VMAX' queda Fuera de Combate, el rival toma", 
+                "tipo": "text", "correcta": "3 cartas de premio" 
+            },
+            { 
+                "id": "tcg_supporter_limit", "label": "¿Cuántas cartas de Partidario (Supporter) puedes jugar por turno?", 
+                "tipo": "number", "correcta": 1 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.5, "total": 1.5 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "Condiciones Especiales: ¿Cuáles de estos estados se eliminan al retirar al Pokémon a la Banca? (+1,2p)",
+        "opciones": ["Quemado", "Confundido", "Dormido", "Envenenado", "Paralizado"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/burn-heal.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/full-heal.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/awakening.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/antidote.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/paralyze-heal.png"
+        ],
+        "correctas": [0, 1, 2, 3, 4],
+        "puntuacion": { "por_opcion": 0.24, "total": 1.2 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Identifica estos datos de cartas del TCG (+2,0p)",
+        "campos": [
+            { 
+                "id": "tcg_charizard_base", "label": "HP del Charizard del Base Set original", 
+                "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+                "tipo": "number", "correcta": 120 
+            },
+            { 
+                "id": "tcg_mew_gold_star", "label": "Tipo elemental del Mew ☆ (Gold Star) de la expansión Delta Species", 
+                "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/151.png",
+                "tipo": "select", "correcta": "Agua" 
+            },
+            { 
+                "id": "tcg_weakness_multiplier", "label": "Multiplicador estándar de Debilidad en el TCG actual", 
+                "tipo": "text", "correcta": "x2" 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.666, "total": 2.0 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿De qué color son estas cartas de Energía Básica? (+1,4p)",
+        "campos": [
+            { "id": "energy_psychic", "label": "Psíquico", "tipo": "select", "correcta": "Morado" },
+            { "id": "energy_fighting", "label": "Lucha", "tipo": "select", "correcta": "Marrón" },
+            { "id": "energy_grass", "label": "Planta", "tipo": "select", "correcta": "Verde" },
+            { "id": "energy_darkness", "label": "Siniestro", "tipo": "select", "correcta": "Negro" },
+            { "id": "energy_steel", "label": "Acero", "tipo": "select", "correcta": "Gris" },
+            { "id": "energy_fairy", "label": "Hada", "tipo": "select", "correcta": "Rosa" },
+            { "id": "energy_dragon", "label": "Dragón", "tipo": "select", "correcta": "Dorado" }
+        ],
+        "puntuacion": { "por_campo": 0.2, "total": 1.4 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "Glitches y Errores de Programación: ¿Cuánto sabes de los fallos técnicos? (+2p)",
+        "campos": [
+            { 
+                "id": "glitch_missingno", 
+                "label": "Nombre del 'Pokémon' fallo más famoso de Kanto", 
+                "tipo": "text", "correcta": "MissingNo." 
+            },
+            { 
+                "id": "glitch_mew", 
+                "label": "Nombre del método para atrapar a Mew en Gen 1 usando un Abra y un Entrenador", 
+                "tipo": "text", "correcta": "Ditto Glitch" 
+            },
+            { 
+                "id": "glitch_badegg", 
+                "label": "Nombre del objeto corrupto en Gen 3 que aparece al detectar datos alterados", 
+                "tipo": "text", "correcta": "Huevo Malo" 
+            },
+            { 
+                "id": "glitch_level", 
+                "label": "¿Hasta qué nivel puede subir un Pokémon en Kanto mediante glitches (superando el 100)?", 
+                "tipo": "number", "correcta": 255 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.5, "total": 2 }
+    },
+    {
+        "tipo": "checkbox",
+        "pregunta": "¿Qué Pokémon NO aparecieron en la versión final de Oro/Plata? (+1,2p)",
+        "opciones": [
+            "Kurusu", 
+            "Honoguma", 
+            "Garon", 
+            "Animon", 
+            "Lurio", 
+            "Turban"
+        ],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/water-stone.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/fire-stone.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"
+        ],
+        "correctas": [0, 1, 3, 5],
+        "puntuacion": { "por_opcion": 0.3, "total": 1.2 }
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "¿Cuál fue el primer Pokémon diseñado y dibujado por Ken Sugimori? (+1p)",
+        "opciones": ["Pikachu", "Rhydon", "Bulbasaur", "Mew"],
+        "opciones_img": [
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 }
+    },
+    {
+        "tipo": "multi",
+        "pregunta": "¿A qué número corresponde estas habilidades ocultas? (+1p)",
+        "campos": [
+            { 
+                "id": "stats_iv", "label": "Valor máximo de un IV (Individual Value) a partir de Hoenn", 
+                "tipo": "number", "correcta": 31 
+            },
+            { 
+                "id": "stats_ev", "label": "EVs (Effort Values) máximos que puede tener una sola estadística", 
+                "tipo": "number", "correcta": 252 
+            }
+        ],
+        "puntuacion": { "por_campo": 0.5, "total": 1 }
+    }
+]
