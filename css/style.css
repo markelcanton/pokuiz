@@ -183,3 +183,31 @@ body.loaded {
 header { animation-delay: 0.1s; }
 main { animation-delay: 0.3s; }
 footer { animation-delay: 0.5s; }
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    header > img {
+        width: 80%; /* Logo más pequeño en móvil */
+        margin-bottom: 15px;
+    }
+
+    header > nav.nav-buttons {
+        margin-left: 0; /* Centra los botones de navegación */
+        display: flex;
+        gap: 5px;
+    }
+
+    body {
+        padding: 10px; /* Menos espacio en los bordes de la pantalla */
+    }
+
+    main > * {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
