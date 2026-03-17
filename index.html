@@ -1,96 +1,236 @@
-<html>
+<html lang="es">
     <head>
         <title>PoKuiz</title>
         <link rel="icon" type="image/png" href="img/logo/pokuizT.png">
-        <style>
-            html {
-                background-image: url('https://assetsio.gnwcdn.com/Leyendas-Pokemon-ZA_HKgfL7m.jpg');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                padding: 20px;
-            }
-
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                margin: 0;
-                gap: 10px;
-            }
-
-            main {
-                flex: 1;
-                background-color: rgb(255, 255, 255, 0.75);
-                padding: 5px;
-                border-radius: 9px;
-            }
-
-            main > * {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            header {
-                background-color: white;
-                padding: 0;
-                padding-left: 10px;
-                padding-right: 10px;
-                display: flex;
-                align-items: center;
-                border-radius: 15px;
-            }
-
-            header > img {
-                width: 350px;
-            }
-
-            hr {
-                margin-left: 12px;
-                margin-right: 12px;
-            }
-
-            main a {
-                color: crimson;
-                text-decoration: none;
-            }
-
-            main a:hover {
-                color: rgb(58, 58, 255);
-                transition: 0.25s;
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/quiz.css">
     </head>
     <body>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.add('loaded');
+            });
+        </script>
         <header>
             <img src="img/logo/pokuizLogo.png" title="Logotipo de PoKuiz">
+            <nav class="nav-buttons">
+                <a href="" class="active">Quiz</a>
+                <a href="about/">Créditos</a>
+            </nav>
         </header>
-        <br>
         <main>
-            <h1>¡Te damos la bienvenida a PoKuiz!</h1>
+            <h1>¡Te damos la bienvenida a PoKuiz! &nbsp;
+                <img src="https://i.pinimg.com/originals/e9/38/d1/e938d18fc07a3ffd16b4864ef2f1308f.gif" width="30px"> &nbsp; 
+            </h1>
             <hr size="1">
             <p>
-                PoKuiz es una página web en Español creada por <a target="_blank" href="https://github.com/markelcanton/" title="https://github.com/markelcanton/">Markel Cantón</a> donde se publican cuestionarios 
-                relacionados con <a target="_blank" href="https://pokemon.es/" title="https://pokemon.es/">Pokémon</a>.
-            </p>
-            <p>Estas preguntas están sacadas del anime, el TCG, VGC y más fuentes, como guías oficiales, el manga y otras publicaciones. En PoKuiz, nos centramos en reunir esas
-            preguntas para poder preguntarle al entrenador cuál es su nivel de conocimiento sobre Pokémon.</p>
-            <p>¿Crees que lo sabes todo sobre Pokémon? Entonces, #LetsPoKuiz!</p>
-        </main>
-        <br>
-        <main>
-            <h2>¡PoKuiz está casi casi!</h2>
-            <hr size="1">
-            <p>¡Hemos terminado la primera versión de PoKuiz, esperamos poder lanzarla entre el 17 y el 20 de marzo de 2026! 😊</p>
-        </main>
-        <br>
-        <main>
-            <h2>Aviso importante:</h2>
-            <hr size="1">
-            <p>
-                <i>PoKuiz no está asociado o relacionado con The Pokémon Company, Nintendo, GAME FREAK o similares; es un proyecto más hecho por fans creado con fines informativos y 
-                educativos. Por lo que, el creador de PoKuiz jamás hará un uso indebido o uso de fines comerciales, así como derechos no pertenecentes. Todos los sprites, nombres y otros datos oficiales 
-                son una marca registrada bajo derechos de autor y propiedad de: © Pokémon/Nintendo/Creatures Inc./GAME FREAK Inc.</i>
+                ¡Pon a prueba tus conocimientos sobre Pokémon, entrenador! Veamos cuánta puntuación consigues sacar.
             </p>
         </main>
+        <main>
+            <h2>Tu puntuación:</h2><hr size="1">
+            <div id="marcadores">
+                </div>
+        </main>
+        <main class="quiz">
+            <div id="contenedor-pregunta">
+                <h2 id="pregunta"></h2><hr size="1">
+
+                <div id="input-dinamico"></div>
+
+                <div id="contenedor-imagen"></div>
+                
+                <div id="buttons" class="botones-container">
+                    <button id="btn-comprobar">Comprobar</button>
+                    <button id="btn-saltar">Saltar pregunta</button> 
+                    
+                    <p id="resultado"></p>
+                    <button id="btn-nueva" style="display:none;">Siguiente pregunta</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <b>Creado por <a target="_blank" href="https://github.com/markelcanton/" title="https://github.com/markelcanton/">Markel Cantón</a></b>
+            <i class="disclaimer" title="Acerca de PoKuiz">PoKuiz es un trabajo derivado no oficial basado en Pokémon. Los sprites, nombres y demás datos oficiales pertenecen a: © Pokémon/Nintendo/Creatures Inc./GAME FREAK Inc.</i>
+        </footer>
+
+        <script>
+            let preguntas = [];
+            let respondidas = 0;
+            let puntos = 0;
+            let puntosMaximosPosibles = 0;
+            let preguntaActual = null;
+            let puedeSaltar = true;
+
+            fetch("./json/preguntas.json")
+                .then(res => res.json())
+                .then(data => {
+                    preguntas = data;
+                    actualizarMarcadores();
+                    mostrarPreguntaAleatoria();
+                });
+
+            function actualizarMarcadores() {
+                const m = document.getElementById("marcadores");
+                if (!m) return;
+                
+                if (respondidas === 0) {
+                    m.style.background = "none";
+                    m.style.textAlign = "center";
+                    m.innerHTML = "<i style='display:block; width:100%;'>Responde para ver tu nota.</i>";
+                    return;
+                }
+                
+                m.style.textAlign = "left";
+                
+                const nota = puntosMaximosPosibles > 0 ? (puntos / puntosMaximosPosibles) * 10 : 0;
+                
+                m.innerHTML = `
+                    <p><b>Respondidas:</b> ${respondidas} | <b>Puntos:</b> ${puntos.toFixed(2)}</p>
+                    <p><b>Nota:</b> <span style="color:${nota < 5 ? '#da1616' : '#2e7d32'}">${nota.toFixed(1)}</span> / 10</p>
+                `;
+            }
+
+            function mostrarPreguntaAleatoria() {
+                const cont = document.getElementById("contenedor-pregunta");
+                cont.classList.remove("visible");
+                cont.style.display = "none";
+                puedeSaltar = true;
+
+                setTimeout(() => {
+                    const idx = Math.floor(Math.random() * preguntas.length);
+                    preguntaActual = preguntas[idx];
+
+                    document.getElementById("pregunta").textContent = preguntaActual.pregunta;
+                    document.getElementById("resultado").innerHTML = "";
+                    
+                    const imgCont = document.getElementById("contenedor-imagen");
+                    imgCont.innerHTML = preguntaActual.img ? `<img src="${preguntaActual.img}" style="width:140px; display:block; margin:0 auto 15px;">` : "";
+
+                    const inputDiv = document.getElementById("input-dinamico");
+                    inputDiv.innerHTML = "";
+
+                    if (preguntaActual.tipo === "multi") {
+                        const wrap = document.createElement("div");
+                        const tieneImagenes = preguntaActual.campos.some(c => c.img);
+                        wrap.className = tieneImagenes ? "multi-grid-container" : "multi-container";
+
+                        preguntaActual.campos.forEach(c => {
+                            const imgHTML = c.img ? `<img src="${c.img}" style="width:80px; display:block; margin:0 auto;">` : "";
+                            wrap.innerHTML += `
+                                <div class="multi-row">
+                                    <div class="multi-content">
+                                        ${imgHTML}
+                                        <span class="multi-label">${c.label}</span>
+                                    </div>
+                                    <input type="${c.tipo}" id="${c.id}" autocomplete="off">
+                                </div>`;
+                        });
+                        inputDiv.appendChild(wrap);
+                    } 
+                    else if (preguntaActual.tipo === "radio" || preguntaActual.tipo === "checkbox") {
+                        inputDiv.className = "grid-opciones";
+                        preguntaActual.opciones.forEach((op, i) => {
+                            const img = preguntaActual.opciones_img?.[i] ? `<img src="${preguntaActual.opciones_img[i]}" style="width:60px;"><br>` : "";
+                            inputDiv.innerHTML += `
+                                <label class="opcion-box">
+                                    ${img}
+                                    <input type="${preguntaActual.tipo}" name="opt" value="${i}"> 
+                                    ${op}
+                                </label>`;
+                        });
+                    } 
+                    else {
+                        inputDiv.innerHTML = `<div class="input-simple-container"><input type="text" id="main_input" autocomplete="off" placeholder="Escribe aquí..."></div>`;
+                    }
+
+                    cont.style.display = "block";
+                    void cont.offsetWidth; 
+                    cont.classList.add("visible");
+
+                    document.getElementById("btn-comprobar").style.display = "inline-block";
+                    document.getElementById("btn-saltar").style.display = "inline-block";
+                    document.getElementById("btn-nueva").style.display = "none";
+                }, 50);
+            }
+
+            document.getElementById("btn-comprobar").onclick = () => {
+                let notaP = 0;
+                let solHTML = ""; 
+                let maxPuntosPregunta = 0;
+
+                if (preguntaActual.tipo === "multi") {
+                    let lineas = [];
+                    preguntaActual.campos.forEach(c => {
+                        const valorCampo = (preguntaActual.puntuacion?.por_campo || c.puntos || 0.25);
+                        maxPuntosPregunta += valorCampo;
+
+                        const v = document.getElementById(c.id).value.trim().toLowerCase();
+                        const ok = Array.isArray(c.correcta) ? c.correcta.map(x=>x.toString().toLowerCase()) : [c.correcta.toString().toLowerCase()];
+                        
+                        if (ok.includes(v)) {
+                            notaP += valorCampo;
+                        }
+                        lineas.push(`• ${c.label}: <b>${Array.isArray(c.correcta) ? c.correcta[0] : c.correcta}</b>`);
+                    });
+                    solHTML = lineas.join("<br>");
+                } 
+                else if (preguntaActual.tipo === "radio") {
+                    maxPuntosPregunta = preguntaActual.puntuacion?.total || 1;
+                    const s = document.querySelector('input[name="opt"]:checked');
+                    if (s && parseInt(s.value) === preguntaActual.correcta) notaP = maxPuntosPregunta;
+                    solHTML = `La respuesta correcta era: <b>${preguntaActual.opciones[preguntaActual.correcta]}</b>`;
+                } 
+                else if (preguntaActual.tipo === "checkbox") {
+                    const valorPorOpcion = preguntaActual.puntuacion?.por_opcion || 0.33;
+                    maxPuntosPregunta = preguntaActual.correctas.length * valorPorOpcion;
+
+                    const seleccionados = Array.from(document.querySelectorAll('input[name="opt"]:checked')).map(e => parseInt(e.value));
+                    
+                    preguntaActual.opciones.forEach((_, i) => {
+                        if (preguntaActual.correctas.includes(i)) {
+                            if (seleccionados.includes(i)) notaP += valorPorOpcion;
+                        } else {
+                            if (seleccionados.includes(i)) notaP -= valorPorOpcion;
+                        }
+                    });
+                    solHTML = `Las correctas eran: <b>${preguntaActual.correctas.map(i => preguntaActual.opciones[i]).join(", ")}</b>`;
+                } 
+                else {
+                    maxPuntosPregunta = preguntaActual.puntuacion?.total || 1;
+                    const v = document.getElementById("main_input").value.trim().toLowerCase();
+                    const ok = Array.isArray(preguntaActual.correcta) ? preguntaActual.correcta.map(x=>x.toString().toLowerCase()) : [preguntaActual.correcta.toString().toLowerCase()];
+                    if (ok.includes(v)) notaP = maxPuntosPregunta;
+                    solHTML = `La respuesta era: <b>${Array.isArray(preguntaActual.correcta) ? preguntaActual.correcta[0] : preguntaActual.correcta}</b>`;
+                }
+
+                if (notaP < 0) notaP = 0;
+                if (notaP > maxPuntosPregunta) notaP = maxPuntosPregunta;
+
+                respondidas++;
+                puntos += notaP;
+                puntosMaximosPosibles += maxPuntosPregunta;
+                
+                actualizarMarcadores();
+
+                const esCorrecto = notaP >= maxPuntosPregunta;
+                const esParcial = notaP > 0 && notaP < maxPuntosPregunta;
+
+                document.getElementById("resultado").innerHTML = `
+                    <div class="feedback-header" style="color:${esCorrecto ? '#2e7d32' : (esParcial ? '#f39c12' : '#da1616')}">
+                        ${esCorrecto ? '¡CORRECTO!' : (esParcial ? 'ACIERTOS PARCIALES' : 'INCORRECTO')} (+${notaP.toFixed(2)} pts)
+                    </div>
+                    <div class="solucion-box">${solHTML}</div>`;
+
+                puedeSaltar = false; 
+                document.getElementById("btn-comprobar").style.display = "none";
+                document.getElementById("btn-saltar").style.display = "none";
+                document.getElementById("btn-nueva").style.display = "inline-block";
+                document.querySelectorAll("#input-dinamico input").forEach(i => i.disabled = true);
+            };
+
+            document.getElementById("btn-saltar").onclick = () => { if (puedeSaltar) mostrarPreguntaAleatoria(); };
+            document.getElementById("btn-nueva").onclick = mostrarPreguntaAleatoria;
+        </script>
     </body>
 </html>
