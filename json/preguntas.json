@@ -161,8 +161,8 @@
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png",
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png"
         ],
-        "correctas": [1, 2, 4],
-        "puntuacion": { "por_opcion": 0.333, "total": 1 }
+        "correctas": [0, 1, 2, 4],
+        "puntuacion": { "por_opcion": 0.25, "total": 1 }
     },
     {
         "tipo": "multi",
