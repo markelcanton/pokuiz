@@ -168,37 +168,201 @@
 #marcadores {
     min-height: 80px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: stretch;
+    gap: 15px;
     border-radius: 15px;
     padding: 10px;
     margin-bottom: 15px;
     transition: background 0.3s ease;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 600px) {
     .botones-container {
-        flex-direction: column !important; /* Apila botones verticalmente */
+        flex-direction: column !important;
         align-items: stretch !important;
         gap: 10px;
     }
 
     .botones-container button {
-        width: 100% !important; /* Botones a ancho completo */
+        width: 100% !important;
         min-width: 0;
     }
 
     .multi-row {
-        flex-direction: column; /* La etiqueta arriba y el input abajo */
+        flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
 
     .multi-row input:not([type="radio"]):not([type="checkbox"]) {
-        width: 100% !important; /* El input ocupa todo el ancho */
+        width: 100% !important;
     }
 
     .grid-opciones {
-        grid-template-columns: 1fr; /* Una sola columna para opciones radio/checkbox */
+        grid-template-columns: 1fr;
     }
+}
+
+.drag-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.drag-item {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.drag-item:active {
+    cursor: grabbing;
+}
+
+.drag-item.dragging {
+    opacity: 0.5;
+    border-color: #ee1515;
+    transform: scale(1.02);
+}
+
+.drag-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    pointer-events: none;
+}
+
+.drag-item p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.marcador-box {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 15px 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.marcador-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.marcador-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-morado {
+    background: linear-gradient(145deg, #a03aff, #8429b9);
+}
+
+.modal-overlay {
+    display: none; 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: white;
+    width: 95%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: scale(0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal-overlay.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.modal-header h2 { margin: 0; font-size: 1.5rem; color: #333; }
+.close-btn { font-size: 28px; cursor: pointer; color: #aaa; font-weight: bold; }
+.close-btn:hover { color: #e74c3c; }
+
+.filtro-seccion { margin-top: 15px; }
+.filtro-seccion h3 { margin-bottom: 8px; color: #555; font-size: 1rem; border-bottom: 1px solid #ddd; }
+.opciones-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.9rem; }
+
+.modal-footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-aplicar { background-color: #2ecc71; color: white; border: none; padding: 10px; flex: 1; border-radius: 8px; cursor: pointer; font-weight: bold; }
+.btn-restablecer { background-color: #95a5a6; color: white; border: none; padding: 10px; flex: 1; border-radius: 8px; cursor: pointer; font-weight: bold; }
+
+.error-dialog {
+    background-color: #fdecea;
+    color: #d32f2f;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #f5c6cb;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
 }
