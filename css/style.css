@@ -192,18 +192,18 @@ footer { animation-delay: 0.5s; }
     }
 
     header > img {
-        width: 80%; /* Logo más pequeño en móvil */
+        width: 80%;
         margin-bottom: 15px;
     }
 
     header > nav.nav-buttons {
-        margin-left: 0; /* Centra los botones de navegación */
+        margin-left: 0;
         display: flex;
         gap: 5px;
     }
 
     body {
-        padding: 10px; /* Menos espacio en los bordes de la pantalla */
+        padding: 10px;
     }
 
     main > * {
