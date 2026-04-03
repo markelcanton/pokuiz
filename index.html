@@ -7,11 +7,6 @@
         <link rel="stylesheet" href="css/quiz.css">
     </head>
     <body>
-        <script>
-            window.addEventListener('DOMContentLoaded', () => {
-                document.body.classList.add('loaded');
-            });
-        </script>
         <header>
             <img src="img/logo/pokuizLogo.png" title="Logotipo de PoKuiz">
             <nav class="nav-buttons">
@@ -43,7 +38,8 @@
                 
                 <div id="buttons" class="botones-container">
                     <button id="btn-comprobar">Comprobar</button>
-                    <button id="btn-saltar">Saltar pregunta</button> 
+                    <button id="btn-saltar">Saltar pregunta</button>
+                    <button id="btn-abrir-filtros" class="btn-morado">Configuración</button>
                     
                     <p id="resultado"></p>
                     <button id="btn-nueva" style="display:none;">Siguiente pregunta</button>
@@ -56,6 +52,7 @@
         </footer>
 
         <script>
+            let todasLasPreguntasOriginales = [];
             let preguntas = [];
             let respondidas = 0;
             let puntos = 0;
@@ -63,34 +60,155 @@
             let preguntaActual = null;
             let puedeSaltar = true;
 
-            fetch("./json/preguntas.json")
-                .then(res => res.json())
-                .then(data => {
-                    preguntas = data;
-                    actualizarMarcadores();
-                    mostrarPreguntaAleatoria();
+            fetch('./json/preguntas.json')
+            .then(response => response.json())
+            .then(data => {
+                todasLasPreguntasOriginales = data;
+                aplicarFiltros(true);
+            });
+
+            function aplicarFiltros(esCargaInicial = false) {
+                const catsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_categoria"]:checked')).map(cb => cb.value);
+                const modsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_modalidad"]:checked')).map(cb => cb.value);
+                const idiomaRadio = document.querySelector('input[name="f_idioma"]:checked');
+                const idiomaSeleccionado = idiomaRadio ? idiomaRadio.value : "";
+
+                if (!esCargaInicial && (catsSeleccionadas.length === 0 || modsSeleccionadas.length === 0)) {
+                    mostrarError("Debes seleccionar al menos una categoría y una modalidad.");
+                    return false;
+                }
+
+                const filtradas = todasLasPreguntasOriginales.filter(p => {
+                    const coincideCat = Array.isArray(p.categoria) 
+                        ? p.categoria.some(c => catsSeleccionadas.includes(c))
+                        : catsSeleccionadas.includes(p.categoria);
+                    const coincideMod = modsSeleccionadas.includes(p.modalidad);
+                    const coincideIdioma = p.idioma === idiomaSeleccionado;
+                    return coincideCat && coincideMod && coincideIdioma;
                 });
+
+                if (filtradas.length === 0) {
+                    if (!esCargaInicial) mostrarError("No hay preguntas con esos filtros.");
+                    return false;
+                }
+
+                preguntas = [...filtradas];
+                respondidas = 0;
+                puntos = 0;
+                puntosMaximosPosibles = 0;
+
+                actualizarMarcadores(); 
+                mostrarPreguntaAleatoria(); 
+                return true;
+            }
 
             function actualizarMarcadores() {
                 const m = document.getElementById("marcadores");
                 if (!m) return;
                 
                 if (respondidas === 0) {
-                    m.style.background = "none";
-                    m.style.textAlign = "center";
-                    m.innerHTML = "<i style='display:block; width:100%;'>Responde para ver tu nota.</i>";
+                    m.innerHTML = `
+                        <div class="marcador-box" style="min-width: 250px;">
+                            <span class="marcador-label"></span>
+                            <span class="marcador-value" style="font-style: italic; font-size: 1.1rem;">Responde para ver tu nota</span>
+                        </div>
+                    `;
                     return;
                 }
-                
-                m.style.textAlign = "left";
                 
                 const nota = puntosMaximosPosibles > 0 ? (puntos / puntosMaximosPosibles) * 10 : 0;
                 
                 m.innerHTML = `
-                    <p><b>Respondidas:</b> ${respondidas} | <b>Puntos:</b> ${puntos.toFixed(2)}</p>
-                    <p><b>Nota:</b> <span style="color:${nota < 5 ? '#da1616' : '#2e7d32'}">${nota.toFixed(1)}</span> / 10</p>
+                    <div class="marcador-box">
+                        <span class="marcador-label">Respondidas:</span>
+                        <span class="marcador-value">${respondidas}</span>
+                    </div>
+                    <div class="marcador-box">
+                        <span class="marcador-label">Puntos:</span>
+                        <span class="marcador-value">${puntos.toFixed(2)}</span>
+                    </div>
+                    <div class="marcador-box">
+                        <span class="marcador-label">Nota final:</span>
+                        <span class="marcador-value" style="color:${nota < 5 ? '#da1616' : '#2e7d32'}">
+                            ${nota.toFixed(1)} / 10
+                        </span>
+                    </div>
                 `;
             }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const modal = document.getElementById("modal-filtros");
+                const btnAbrir = document.getElementById("btn-abrir-filtros");
+                const btnCerrar = document.getElementById("btn-cerrar-filtros");
+                const errorDiv = document.getElementById("error-filtro");
+                const errorTexto = document.getElementById("error-texto");
+
+                const btnAplicar = document.getElementById("btn-aplicar-filtros");
+                const btnRestablecer = document.getElementById("btn-restablecer-filtros");
+
+                function mostrarError(mensaje) {
+                    errorTexto.innerText = mensaje;
+                    errorDiv.style.display = "flex";
+                    setTimeout(() => { errorDiv.style.animation = "none"; }, 400);
+                }
+
+                btnAbrir.onclick = () => {
+                    errorDiv.style.display = "none";
+                    modal.style.display = "flex";
+                    setTimeout(() => modal.classList.add("show"), 10);
+                };
+
+                const cerrarModal = () => {
+                    modal.classList.remove("show");
+                    setTimeout(() => modal.style.display = "none", 300);
+                };
+                btnCerrar.onclick = cerrarModal;
+
+                btnRestablecer.addEventListener("click", () => {
+                    document.querySelectorAll('input[name="f_categoria"]').forEach(cb => cb.checked = true);
+                    document.querySelectorAll('input[name="f_modalidad"]').forEach(cb => cb.checked = true);
+                    const radioEs = document.querySelector('input[name="f_idioma"][value="Español europeo"]');
+                    if (radioEs) radioEs.checked = true;
+                    
+                    errorDiv.style.display = "none";
+                });
+
+                btnAplicar.addEventListener("click", () => {
+                    const catsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_categoria"]:checked')).map(cb => cb.value);
+                    const modsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_modalidad"]:checked')).map(cb => cb.value);
+                    const idiomaRadio = document.querySelector('input[name="f_idioma"]:checked');
+                    const idiomaSeleccionado = idiomaRadio ? idiomaRadio.value : "";
+
+                    if (catsSeleccionadas.length === 0 || modsSeleccionadas.length === 0) {
+                        mostrarError("Debes seleccionar al menos una categoría y una modalidad.");
+                        return;
+                    }
+
+                    const filtradas = todasLasPreguntasOriginales.filter(p => {
+                        const coincideCat = Array.isArray(p.categoria) 
+                            ? p.categoria.some(c => catsSeleccionadas.includes(c))
+                            : catsSeleccionadas.includes(p.categoria);
+                        const coincideMod = modsSeleccionadas.includes(p.modalidad);
+                        const coincideIdioma = p.idioma === idiomaSeleccionado;
+                        return coincideCat && coincideMod && coincideIdioma;
+                    });
+
+                    if (filtradas.length === 0) {
+                        mostrarError("No hay preguntas con esos filtros.");
+                        return;
+                    }
+
+                    preguntas = [...filtradas];
+                    respondidas = 0;
+                    puntos = 0;
+                    puntosMaximosPosibles = 0;
+
+                    actualizarMarcadores(); 
+                    mostrarPreguntaAleatoria(); 
+                    
+                    cerrarModal();
+                });
+            });
 
             function mostrarPreguntaAleatoria() {
                 const cont = document.getElementById("contenedor-pregunta");
@@ -110,8 +228,37 @@
 
                     const inputDiv = document.getElementById("input-dinamico");
                     inputDiv.innerHTML = "";
+                    inputDiv.className = "";
 
-                    if (preguntaActual.tipo === "multi") {
+                    if (preguntaActual.tipo === "ordenar") {
+                        const dragList = document.createElement("div");
+                        dragList.className = "drag-container";
+                        const opcionesMezcladas = [...preguntaActual.opciones].sort(() => Math.random() - 0.5);
+
+                        opcionesMezcladas.forEach(opc => {
+                            const item = document.createElement("div");
+                            item.className = "drag-item";
+                            item.draggable = true;
+                            item.dataset.id = opc.id;
+                            item.innerHTML = `<img src="${opc.img}" draggable="false"> <span>${opc.nombre}</span>`;
+
+                            item.addEventListener('dragstart', () => item.classList.add('dragging'));
+                            item.addEventListener('dragend', () => item.classList.remove('dragging'));
+                            dragList.appendChild(item);
+                        });
+
+                        dragList.addEventListener('dragover', e => {
+                            e.preventDefault();
+                            const afterElement = getDragAfterElement(dragList, e.clientY);
+                            const dragging = document.querySelector('.dragging');
+                            if (dragging) {
+                                if (afterElement == null) dragList.appendChild(dragging);
+                                else dragList.insertBefore(dragging, afterElement);
+                            }
+                        });
+                        inputDiv.appendChild(dragList);
+                    }
+                    else if (preguntaActual.tipo === "multi") {
                         const wrap = document.createElement("div");
                         const tieneImagenes = preguntaActual.campos.some(c => c.img);
                         wrap.className = tieneImagenes ? "multi-grid-container" : "multi-container";
@@ -155,12 +302,42 @@
                 }, 50);
             }
 
+            function getDragAfterElement(container, y) {
+                const draggableElements = [...container.querySelectorAll('.drag-item:not(.dragging)')];
+                return draggableElements.reduce((closest, child) => {
+                    const box = child.getBoundingClientRect();
+                    const offset = y - box.top - box.height / 2;
+                    if (offset < 0 && offset > closest.offset) {
+                        return { offset: offset, element: child };
+                    } else {
+                        return closest;
+                    }
+                }, { offset: Number.NEGATIVE_INFINITY }).element;
+            }
+
             document.getElementById("btn-comprobar").onclick = () => {
                 let notaP = 0;
                 let solHTML = ""; 
                 let maxPuntosPregunta = 0;
 
-                if (preguntaActual.tipo === "multi") {
+                if (preguntaActual.tipo === "ordenar") {
+                    maxPuntosPregunta = preguntaActual.puntuacion?.total || 1;
+
+                    const puntosPorElemento = preguntaActual.puntuacion?.por_elemento || (maxPuntosPregunta / preguntaActual.opciones.length);
+
+                    const ordenUsuario = [...document.querySelectorAll('.drag-item')].map(el => el.dataset.id);
+                    const esCorrecto = JSON.stringify(ordenUsuario) === JSON.stringify(preguntaActual.correcta);
+                    
+                    preguntaActual.correcta.forEach((idCorrecto, index) => {
+                        if (ordenUsuario[index] === idCorrecto) {
+                            notaP += puntosPorElemento;
+                        }
+                    });
+
+                    if (esCorrecto) notaP = maxPuntosPregunta;
+                    solHTML = `El orden correcto era: <br><b>${preguntaActual.correcta.join(" → ")}</b>`;
+                }
+                else if (preguntaActual.tipo === "multi") {
                     let lineas = [];
                     preguntaActual.campos.forEach(c => {
                         const valorCampo = (preguntaActual.puntuacion?.por_campo || c.puntos || 0.25);
@@ -169,9 +346,7 @@
                         const v = document.getElementById(c.id).value.trim().toLowerCase();
                         const ok = Array.isArray(c.correcta) ? c.correcta.map(x=>x.toString().toLowerCase()) : [c.correcta.toString().toLowerCase()];
                         
-                        if (ok.includes(v)) {
-                            notaP += valorCampo;
-                        }
+                        if (ok.includes(v)) notaP += valorCampo;
                         lineas.push(`• ${c.label}: <b>${Array.isArray(c.correcta) ? c.correcta[0] : c.correcta}</b>`);
                     });
                     solHTML = lineas.join("<br>");
@@ -185,7 +360,6 @@
                 else if (preguntaActual.tipo === "checkbox") {
                     const valorPorOpcion = preguntaActual.puntuacion?.por_opcion || 0.33;
                     maxPuntosPregunta = preguntaActual.correctas.length * valorPorOpcion;
-
                     const seleccionados = Array.from(document.querySelectorAll('input[name="opt"]:checked')).map(e => parseInt(e.value));
                     
                     preguntaActual.opciones.forEach((_, i) => {
@@ -219,7 +393,7 @@
 
                 document.getElementById("resultado").innerHTML = `
                     <div class="feedback-header" style="color:${esCorrecto ? '#2e7d32' : (esParcial ? '#f39c12' : '#da1616')}">
-                        ${esCorrecto ? '¡CORRECTO!' : (esParcial ? 'ACIERTOS PARCIALES' : 'INCORRECTO')} (+${notaP.toFixed(2)} pts)
+                        ${esCorrecto ? '¡CORRECTO!' : (esParcial ? 'ACERTADO DE FORMA PARCIAL' : 'INCORRECTO')} (+${notaP.toFixed(2)} pts)
                     </div>
                     <div class="solucion-box">${solHTML}</div>`;
 
@@ -227,11 +401,207 @@
                 document.getElementById("btn-comprobar").style.display = "none";
                 document.getElementById("btn-saltar").style.display = "none";
                 document.getElementById("btn-nueva").style.display = "inline-block";
+
+                document.querySelectorAll(".drag-item").forEach(el => el.draggable = false);
                 document.querySelectorAll("#input-dinamico input").forEach(i => i.disabled = true);
             };
 
             document.getElementById("btn-saltar").onclick = () => { if (puedeSaltar) mostrarPreguntaAleatoria(); };
             document.getElementById("btn-nueva").onclick = mostrarPreguntaAleatoria;
-        </script>
+        </script>  
+        <div id="modal-filtros" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Configuración</h2>
+                    <span class="close-btn" id="btn-cerrar-filtros">&times;</span>
+                </div>
+
+                <div class="modal-body">
+                    <div id="error-filtro" class="error-dialog" style="display: none;">
+                        <span class="error-icon">⚠️</span>
+                        <span id="error-texto"></span>
+                    </div>
+                    <div class="filtro-seccion">
+                        <h3>Categoría:</h3>
+                        <div class="opciones-grid">
+                            <label><input type="checkbox" name="f_categoria" value="VGC" checked> VGC</label>
+                            <label><input type="checkbox" name="f_categoria" value="GO" checked> GO</label>
+                            <label><input type="checkbox" name="f_categoria" value="UNITE" checked> UNITE</label>
+                            <label><input type="checkbox" name="f_categoria" value="SERIE" checked> SERIE</label>
+                            <label><input type="checkbox" name="f_categoria" value="TCG" checked> TCG</label>
+                            <label><input type="checkbox" name="f_categoria" value="TCGP" checked> TCGP</label>
+                            <label><input type="checkbox" name="f_categoria" value="GENERAL" checked> General</label>
+                        </div>
+                    </div>
+
+                    <div class="filtro-seccion">
+                        <h3>Idioma:</h3>
+                        <div class="opciones-grid">
+                            <label><input type="radio" name="f_idioma" value="Español europeo" checked> Español europeo</label>
+                            <label><input type="radio" name="f_idioma" value="Inglés norteamericano"> Inglés norteamericano</label>
+                            <label><input type="radio" name="f_idioma" value="Euskera"> Euskera</label>
+                        </div>
+                    </div>
+
+                    <div class="filtro-seccion">
+                        <h3>Modalidad:</h3>
+                        <div class="opciones-grid">
+                            <label><input type="checkbox" name="f_modalidad" value="Respuesta" checked> Respuesta</label>
+                            <label><input type="checkbox" name="f_modalidad" value="Selección múltiple" checked> Selección múltiple</label>
+                            <label><input type="checkbox" name="f_modalidad" value="Selección única" checked> Selección única</label>
+                            <label><input type="checkbox" name="f_modalidad" value="Ordenar" checked> Ordenar</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="btn-aplicar-filtros" class="btn-aplicar">Aplicar cambios</button>
+                    <button id="btn-restablecer-filtros" class="btn-restablecer">Restablecer</button>
+                </div>
+            </div>
+        </div>
     </body>
+    <script>
+    // Anti-cheat:
+    (function() {
+        const style = document.createElement('style');
+        style.innerHTML = `
+            #modal-anticheat-fixed {
+                display: none;
+                position: fixed;
+                top: 0; left: 0; 
+                width: 100%; height: 100%;
+                background-color: rgba(0, 0, 0, 0.85);
+                z-index: 2147483647;
+                display: none; 
+                justify-content: center; 
+                align-items: center;
+                overflow-y: auto;
+                padding: 20px;
+                box-sizing: border-box;
+                transition: opacity 0.3s ease;
+            }
+            
+            .anticheat-card {
+                background: white; 
+                padding: clamp(20px, 5vw, 40px);
+                border-radius: 12px;
+                max-width: 450px; 
+                width: 100%;
+                text-align: center;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+                position: relative;
+                margin: auto;
+            }
+
+            .anim-entrada { animation: zoomIn 0.3s ease-out forwards; }
+            .anim-salida { animation: zoomOut 0.3s ease-in forwards; }
+            .active-shake { animation: shake 0.4s ease-in-out; }
+
+            .error-vibrar {
+                background: #fdecea; color: #d32f2f; 
+                padding: 15px; border-radius: 8px; 
+                border: 1px solid #f5c6cb; 
+                font-weight: bold; margin-bottom: 10px;
+                font-size: clamp(0.8rem, 3vw, 1rem);
+            }
+
+            .anticheat-btn {
+                background-color: #2ecc71; color: white; 
+                border: none; padding: 15px;
+                border-radius: 8px; cursor: pointer; 
+                font-weight: bold; margin-top: 20px; 
+                width: 100%; font-size: 1rem;
+            }
+
+            @keyframes zoomIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+            @keyframes zoomOut { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(0.8); } }
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-8px); }
+                75% { transform: translateX(8px); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        const modalHTML = `
+            <div id="modal-anticheat-fixed">
+                <div id="anticheat-card-el" class="anticheat-card">
+                    <h2 style="color: #333; margin-top: 0; font-size: clamp(1.2rem, 5vw, 1.8rem);">❌ Acción denegada</h2>
+                    <div id="alert-box" class="error-vibrar">
+                        Esta página contiene un anti-cheat, las funciones de desarrollador están deshabilitadas.
+                    </div>
+                    <p style="color: #444; margin-top: 15px; font-size: 0.95rem;">
+                        Cierra las herramientas de desarrollador para continuar.
+                    </p>
+                    <button class="anticheat-btn" id="btn-final-close">Entendido</button>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+        const modal = document.getElementById('modal-anticheat-fixed');
+        const card = document.getElementById('anticheat-card-el');
+        const btn = document.getElementById('btn-final-close');
+        const alertBox = document.getElementById('alert-box');
+
+        function lockHTML() {
+            if (modal.style.display === 'flex') {
+                alertBox.classList.remove('active-shake');
+                void alertBox.offsetWidth;
+                alertBox.classList.add('active-shake');
+            } else {
+                modal.style.display = 'flex';
+                modal.style.opacity = '1';
+                card.classList.remove('anim-salida');
+                card.classList.add('anim-entrada');
+                document.body.classList.add('anticheat-locked');
+            }
+            debugger; 
+        }
+
+        function unlockAntiCheat() {
+            card.classList.remove('anim-entrada');
+            card.classList.add('anim-salida');
+            modal.style.opacity = '0';
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.classList.remove('anticheat-locked');
+            }, 300);
+        }
+
+        function verify() {
+            const threshold = 160;
+            const isDevToolsOpen = window.outerWidth - window.innerWidth > threshold || 
+                                window.outerHeight - window.innerHeight > threshold;
+            if (isDevToolsOpen) {
+                lockHTML();
+            }
+        }
+
+        btn.addEventListener('click', () => {
+            unlockAntiCheat();
+            setTimeout(verify, 400); 
+        });
+
+        window.addEventListener('resize', verify);
+        setInterval(verify, 1000); 
+
+        // Bloqueo de teclas (F12, Ctrl+Shift+I, Ctrl+U...):
+        window.addEventListener('keydown', (e) => {
+            if (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || (e.ctrlKey && e.keyCode === 85)) {
+                e.preventDefault();
+                lockHTML();
+            }
+        });
+
+        // Bloqueo de opciones con clic derecho:
+        window.addEventListener('contextmenu', (e) => { e.preventDefault(); });
+    })();
+
+    // Load 0.2s fade:
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded');
+    });
+    </script>
 </html>
