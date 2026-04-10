@@ -60,7 +60,7 @@
             let preguntaActual = null;
             let puedeSaltar = true;
 
-            fetch('./json/preguntas.json')
+            fetch('./json/testing.json')
             .then(response => response.json())
             .then(data => {
                 todasLasPreguntasOriginales = data;
@@ -509,7 +509,8 @@
             .anticheat-btn {
                 background-color: #2ecc71; color: white; 
                 border: none; padding: 15px;
-                border-radius: 8px; cursor: pointer; 
+                border-radius: 8px;
+                cursor: pointer; 
                 font-weight: bold; margin-top: 20px; 
                 width: 100%; font-size: 1rem;
             }
@@ -570,13 +571,23 @@
             }, 300);
         }
 
+        const touchScreen = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
         function verify() {
+            if (touchScreen) return;
+
             const threshold = 160;
-            const isDevToolsOpen = window.outerWidth - window.innerWidth > threshold || 
-                                window.outerHeight - window.innerHeight > threshold;
-            if (isDevToolsOpen) {
+            const widthDiff = Math.abs(window.outerWidth - window.innerWidth);
+            const heightDiff = Math.abs(window.outerHeight - window.innerHeight);
+
+            if (widthDiff > threshold || heightDiff > threshold) {
                 lockHTML();
             }
+        }
+
+        if (!touchScreen) {
+            window.addEventListener('resize', verify);
+            setInterval(verify, 1000);
         }
 
         btn.addEventListener('click', () => {
