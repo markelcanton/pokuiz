@@ -479,3 +479,20 @@
 .btn-cian {
     background: linear-gradient(145deg, #3ab0ff, #2990b9);
 }
+
+/* Animación de vibración para el contenedor de vidas */
+.active-shake {
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-8px); }
+    40%, 80% { transform: translateX(8px); }
+}
+
+/* Mejora visual para los corazones */
+#vidas-display {
+    text-shadow: 0 0 5px rgba(238, 21, 21, 0.4);
+    transition: all 0.3s ease;
+}
