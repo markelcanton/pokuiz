@@ -74,7 +74,7 @@ header > nav.nav-buttons > a:hover {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-    transition: 0.25s;
+    transition: 0.15s ease-in-out;
 }
 
 main {
@@ -134,21 +134,23 @@ main:not(.quiz) hr {
 main a {
     color: crimson;
     text-decoration: none;
+    transition: 0.15s ease-in-out;
 }
 
 footer a {
     color: crimson;
     text-decoration: none;
+    transition: 0.15s ease-in-out;
 }
 
 footer a:hover {
     color: rgb(58, 58, 255);
-    transition: 0.25s;
+    transition: 0.15s ease-in-out;
 }
 
 main a:hover {
     color: rgb(58, 58, 255);
-    transition: 0.25s;
+    transition: 0.15s ease-in-out;
 }
 
 main li {
