@@ -7,4 +7,3 @@ Markel Cantón, creador de PoKuiz, es el único propietario del código del proy
 PoKuiz is a non-profit, non-commercial Pokémon spin-off project created by fans. All names, sprites, and associated resources are copyrighted and registered property of The Pokémon Company/Nintendo/Creatures/Game Freak.
 
 Markel Cantón, the creator of PoKuiz, is the sole owner of the project's code, and its redistribution or commercial use is prohibited under any circumstances. Likewise, its creator will never make any commercial use of it.
-
