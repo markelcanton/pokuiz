@@ -1,0 +1,83 @@
+:root {
+    --poke-red: #ef5350;
+    --poke-blue: #2a75bb;
+    --poke-yellow: #ffcb05;
+    --bg-color: #f8f9fa;
+}
+
+#timer {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px #0002;
+}
+
+.main-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+canvas {
+    border: 3px solid #333;
+    border-radius: 12px;
+    background-color: #fff;
+    cursor: crosshair;
+    touch-action: none;
+    max-width: 100%;
+}
+
+.reference-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 280px;
+    border: 2px dashed #ccc;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#pokemonRef {
+    width: 240px;
+    height: 240px;
+    image-rendering: pixelated;
+}
+
+.controls {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:active { transform: translateY(2px); box-shadow: none; }
+button:disabled { background-color: #ccc !important; cursor: not-allowed; transform: none; }
+
+.btn-main { background-color: var(--poke-blue); color: white; }
+.btn-action { background-color: #4caf50; color: white; }
+.btn-clear { background-color: #757575; color: white; }
+
+.tool-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #eee;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
