@@ -1,0 +1,72 @@
+/* Contenedor principal de las 3 columnas */
+.contenedor-modalidades {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que en móvil se pongan una debajo de otra */
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Estilo de cada tarjeta individual */
+.tarjeta-modalidad {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px; /* Ancho fijo en PC */
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efecto al pasar el ratón */
+.tarjeta-modalidad:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de la imagen para que todas midan lo mismo */
+.imagen-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para que rellene el espacio sin deformarse */
+    transition: transform 0.5s ease;
+}
+
+.tarjeta-modalidad:hover .imagen-container img {
+    transform: scale(1.1); /* Zoom suave a la foto al hacer hover */
+}
+
+/* Información de texto dentro de la tarjeta */
+.tarjeta-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjeta-info h2 {
+    margin: 0 0 10px 0;
+    color: crimson;
+    font-size: 1.4rem;
+}
+
+.tarjeta-info p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Ajuste para móviles (Pantallas pequeñas) */
+@media (max-width: 600px) {
+    .tarjeta-modalidad {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+}
