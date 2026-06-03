@@ -1,0 +1,106 @@
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PoKuiz</title>
+        <link rel="icon" type="image/png" href="../img/logo/pokuizT.png">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/quiz.css">
+        <link rel="stylesheet" href="../css/anticheat.css">
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo/pokuizLogo.png" title="Logotipo de PoKuiz" alt="Logotipo de PoKuiz">
+            <nav class="nav-buttons">
+                <a href="../">Inicio</a>
+                <a href="../about/">Créditos</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Tu puntuación:</h2><hr size="1">
+            <div id="marcadores">
+            </div>
+        </main>
+        <main class="quiz">
+            <div id="contenedor-pregunta">
+                <h2 id="pregunta"></h2><hr size="1">
+
+                <div id="controles-ordenar" style="text-align: center; margin-bottom: 15px;">
+                    <button id="btn-mezclar" class="btn-morado" style="display:none; width: auto; padding: 10px 20px;">Mezclar</button>
+                </div>
+
+                <div id="input-dinamico"></div>
+
+                <div id="contenedor-imagen"></div>
+                
+                <div id="buttons" class="botones-container">
+                    <button id="btn-comprobar" title = "Si crees que tu respuesta es correcta, pulsa el botón.">Comprobar</button>
+                    <button id="btn-saltar" title="¿Difícil? Pues prueba con otra.">Saltar pregunta</button>
+                    <button id="btn-abrir-filtros" class="btn-morado" title = "Cambia las opciones de configuración del quiz">Configuración</button>
+
+                    <p id="resultado"></p>
+                    <button id="btn-nueva" style="display:none;">Siguiente pregunta</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <b>Creado por <a target="_blank" href="https://github.com/markelcanton/" title="https://github.com/markelcanton/">Markel Cantón</a></b>
+            <i class="disclaimer" title="Acerca de PoKuiz">PoKuiz es un trabajo derivado no oficial basado en Pokémon. Los sprites, nombres y demás datos oficiales pertenecen a: © Pokémon/Nintendo/Creatures Inc./GAME FREAK Inc.</i>
+        </footer>
+
+        <div id="modal-filtros" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Configuración</h2>
+                    <span class="close-btn" id="btn-cerrar-filtros">&times;</span>
+                </div>
+
+                <div class="modal-body">
+                    <div id="error-filtro" class="error-dialog" style="display: none;">
+                        <span class="error-icon">⚠️</span>
+                        <span id="error-texto"></span>
+                    </div>
+
+                    <div class="filtro-seccion">
+                        <h3>Categoría:</h3>
+                        <div class="opciones-grid">
+                            <label title="Esta opción seleccionará preguntas del VGC (Pokémon Leyendas Z-A, Escarlata/Púrpura, Espada/Escudo...)"><input type="checkbox" name="f_categoria" value="VGC" checked> VGC</label>
+                            <label title="Esta opción seleccionará preguntas de Pokémon GO"><input type="checkbox" name="f_categoria" value="GO" checked> GO</label>
+                            <label title="Esta opción seleccionará preguntas de Pokémon UNITE"><input type="checkbox" name="f_categoria" value="UNITE" checked> UNITE</label>
+                            <label title="Esta opción seleccionará preguntas del anime y las películas."><input type="checkbox" name="f_categoria" value="SERIE" checked> SERIE</label>
+                            <label title="Esta opción seleccionará preguntas del TCG (no se incluyen preguntas de Pokémon TCG Pocket)"><input type="checkbox" name="f_categoria" value="TCG" checked> TCG</label>
+                            <label title="Esta opción seleccionará preguntas de Pokémon TCG Pocket (no se incluyen preguntas del TCG Live o físico)"><input type="checkbox" name="f_categoria" value="TCGP" checked> TCGP</label>
+                            <label title="Esta opción seleccionará preguntas de cultura general (conocimientos, curiosidades, etc.)."><input type="checkbox" name="f_categoria" value="GENERAL" checked> General</label>
+                        </div>
+                    </div>
+
+                    <div class="filtro-seccion">
+                        <h3>Idioma:</h3>
+                        <div class="opciones-grid">
+                            <label title="Cambia el idioma de las preguntas a Español europeo"><input type="radio" name="f_idioma" value="Español europeo" checked> Español europeo</label>
+                            <label title="Cambia el idioma de las preguntas a Inglés norteamericano"><input type="radio" name="f_idioma" value="Inglés norteamericano"> Inglés norteamericano</label>
+                            <label title="Cambia el idioma de las preguntas a Euskera"><input type="radio" name="f_idioma" value="Euskera"> Euskera</label>
+                        </div>
+                    </div>
+
+                    <div class="filtro-seccion">
+                        <h3>Modalidad:</h3>
+                        <div class="opciones-grid">
+                            <label title="Solo se mostrarán las preguntas para responder en texto."><input type="checkbox" name="f_modalidad" value="Respuesta" checked> Respuesta</label>
+                            <label title="Solo se mostrarán las preguntas para responder en selección única (radio)."><input type="checkbox" name="f_modalidad" value="Selección múltiple" checked> Selección múltiple</label>
+                            <label title="Solo se mostrarán las preguntas para responder en selección múltiple (checkbox)."><input type="checkbox" name="f_modalidad" value="Selección única" checked> Selección única</label>
+                            <label title="Solo se mostrarán las preguntas para ordenar (1, 2, 3...)."><input type="checkbox" name="f_modalidad" value="Ordenar" checked> Ordenar</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="btn-aplicar-filtros" class="btn-aplicar" title="Para guardar tu configuración, pulsa aquí (el quiz y tus marcadores se reiniciarán).">Aplicar cambios</button>
+                    <button id="btn-restablecer-filtros" class="btn-restablecer" title="Para restablecer tu configuración a los valores por defecto, pulsa aquí (el quiz y tus marcadores se reiniciarán).">Restablecer</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/loadfade.js"></script>
+    <script src="../js/anticheat.js"></script>
+    <script src="../js/quiz.js"></script>
+</html>
