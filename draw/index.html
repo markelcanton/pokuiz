@@ -1,0 +1,53 @@
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoKuiz</title>
+    <link rel="icon" type="image/png" href="../img/logo/pokuizT.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/draw.css">
+    <link rel="stylesheet" href="../css/anticheat.css">
+</head>
+<body>
+    <header>
+        <img src="../img/logo/pokuizLogo.png" title="Logotipo de PoKuiz" alt="Logotipo de PoKuiz">
+        <nav class="nav-buttons">
+            <a href="../">Inicio</a>
+            <a href="../about">Créditos</a>
+        </nav>
+    </header>
+    <main>
+        <h1>¡Dibuja a todos!</h1>
+        <hr size="1">
+        <center><div id="timer" style="padding-top: 2px;">45s</div></center>
+        <p>
+            <div class="main-game">
+                <div class="reference-box">
+                    <p>Pokémon a dibujar:</p>
+                    <img id="pokemonRef" src="" alt="?" style="display: none;">
+                    <div id="placeholder" style="font-size: 5rem;">?</div>
+                </div>
+
+                <canvas id="drawCanvas" width="500" height="500"></canvas>
+            </div>
+
+            <div class="controls">
+                <button class="btn-main" id="startBtn">Iniciar Juego</button>
+                <div class="tool-group">
+                    <input type="color" id="colorPicker" value="#000000">
+                    <input type="range" id="brushSize" min="1" max="25" value="6">
+                </div>
+                <button class="btn-clear" id="clearBtn">Limpiar lienzo</button>
+                <button class="btn-action" id="saveBtn" disabled>Guardar como PNG</button>
+                <button class="btn-action" id="shareBtn" disabled style="background-color: #9c27b0;">Compartir creación</button>
+            </div>
+        </p>
+    </main>
+    <footer>
+        <b>Creado por <a target="_blank" href="https://github.com/markelcanton/" title="https://github.com/markelcanton/">Markel Cantón</a></b>
+        <i class="disclaimer" title="Acerca de PoKuiz">PoKuiz es un trabajo derivado no oficial basado en Pokémon. Los sprites, nombres y demás datos oficiales pertenecen a: © Pokémon/Nintendo/Creatures Inc./GAME FREAK Inc.</i>
+    </footer>
+</body>
+<script src="../js/anticheat.js"></script>
+<script src="../js/loadfade.js"></script>
+<script src="../js/draw.js"></script>
+</html>
