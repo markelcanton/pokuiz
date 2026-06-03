@@ -6,7 +6,7 @@ let puntosMaximosPosibles = 0;
 let preguntaActual = null;
 let canSkip = true;
 
-fetch('./json/preguntas.json')
+fetch('../json/preguntas.json')
 .then(response => response.json())
 .then(data => {
     allPreguntas = data;
