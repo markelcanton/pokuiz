@@ -95,19 +95,10 @@
             }
         }, false);
 
-
-        if (!touchScreen) {
-            window.addEventListener('resize', verify);
-            setInterval(verify, 1000);
-        }
-
         btn.addEventListener('click', () => {
             unlockAntiCheat();
             setTimeout(verify, 400); 
         });
-
-        window.addEventListener('resize', verify);
-        setInterval(verify, 1000); 
 
         // Bloqueo de teclas (F12, Ctrl+Shift+I, Ctrl+U...):
         window.addEventListener('keydown', (e) => {
