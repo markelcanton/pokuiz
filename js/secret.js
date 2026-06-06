@@ -36,6 +36,8 @@ document.getElementById("btn-guardar-config").onclick = () => {
     configDificultad = form.elements["dificultad"].value;
     configModo = form.elements["modo"].value;
 
+    permitirDuplicados = form.elements["duplicados"] ? form.elements["duplicados"].checked : true;
+
     if (configDificultad === "facil") {
         numOpcionesDisponibles = 6;
         numSlotsSecuencia = 4;
@@ -71,20 +73,19 @@ function elegirPokemonParaPartida() {
 }
 
 function generarCodigo() {
-    elegirPokemonParaPartida();
-    seleccionUsuario = Array(numSlotsSecuencia).fill(null);
-    codigoSecreto = [];
+    pokemonPartida = [];
+    let poolPokes = [...POKEMON_DISPONIBLES];
+    
+    while (pokemonPartida.length < numOpcionesDisponibles && poolPokes.length > 0) {
+        const randomIndex = Math.floor(Math.random() * poolPokes.length);
+        pokemonPartida.push(poolPokes.splice(randomIndex, 1)[0]);
+    }
 
-    if (permitirDuplicados) {
-        for (let i = 0; i < numSlotsSecuencia; i++) {
-            const randomPoke = pokemonPartida[Math.floor(Math.random() * pokemonPartida.length)];
-            codigoSecreto.push(randomPoke);
-        }
-    } else {
-        let pool = [...pokemonPartida];
-        for (let i = 0; i < numSlotsSecuencia; i++) {
-            const randomIndex = Math.floor(Math.random() * pool.length);
-            const randomPoke = pool.splice(randomIndex, 1)[0];
+    codigoSecreto = [];
+    while (codigoSecreto.length < numSlotsSecuencia) {
+        const randomPoke = pokemonPartida[Math.floor(Math.random() * pokemonPartida.length)];
+        
+        if (permitirDuplicados || !codigoSecreto.includes(randomPoke)) {
             codigoSecreto.push(randomPoke);
         }
     }
