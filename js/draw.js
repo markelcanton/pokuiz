@@ -42,11 +42,21 @@ function draw(e) {
     if (!isDrawing || !gameActive) return;
 
     const rect = canvas.getBoundingClientRect();
-    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
-    const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+    let clientX, clientY;
+
+    if (e.touches && e.touches.length > 0) {
+        clientX = e.touches[0].clientX;
+        clientY = e.touches[0].clientY;
+    } else {
+        clientX = e.clientX;
+        clientY = e.clientY;
+    }
     
-    const x = clientX - rect.left;
-    const y = clientY - rect.top;
+    const posicionVisualX = clientX - rect.left;
+    const posicionVisualY = clientY - rect.top;
+
+    const x = posicionVisualX * (canvas.width / rect.width);
+    const y = posicionVisualY * (canvas.height / rect.height);
 
     ctx.lineWidth = brushSize?.value || 6;
     ctx.lineCap = 'round';
