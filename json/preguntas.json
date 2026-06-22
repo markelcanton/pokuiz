@@ -12,7 +12,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1.5 },
         "categoria": ["GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -44,7 +44,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1.5 },
         "categoria": ["GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -72,7 +72,7 @@
         ],
         "correcta": 5,
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -128,7 +128,7 @@
         ],
         "correcta": 5,
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -146,7 +146,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 2 },
         "categoria": ["GENERAL", "TCG", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -182,7 +182,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 2 },
         "categoria": ["GENERAL", "TCG", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -201,7 +201,7 @@
         ],
         "puntuacion": { "total": 1.5 },
         "categoria": ["GENERAL", "TCG", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -239,7 +239,7 @@
         ],
         "puntuacion": { "total": 1.5 },
         "categoria": ["GENERAL", "TCG", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -260,7 +260,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -302,7 +302,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -317,7 +317,7 @@
         ],
         "puntuacion": { "por_campo": 0.2, "total": 1 },
         "categoria": ["VGC", "GENERAL", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -347,7 +347,7 @@
         ],
         "puntuacion": { "por_campo": 0.2, "total": 1 },
         "categoria": ["VGC", "GENERAL", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -361,7 +361,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -389,7 +389,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -407,7 +407,7 @@
         ],
         "puntuacion": { "por_campo": 0.1, "total": 0.8 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -443,7 +443,7 @@
         ],
         "puntuacion": { "por_campo": 0.1, "total": 0.8 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -468,7 +468,7 @@
         "correctas": [0, 2, 3, 5],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -518,7 +518,7 @@
         "correctas": [0, 2, 3, 5],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -527,7 +527,7 @@
         "correcta": "Arceus",
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -545,7 +545,7 @@
         "correcta": "Arceus",
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -570,7 +570,7 @@
         "correctas": [0, 1, 2, 4],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["VGC", "GENERAL", "GO", "SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -620,7 +620,7 @@
         "correctas": [0, 1, 2, 4],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["VGC", "GENERAL", "GO", "SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -633,7 +633,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["SERIE", "VGC", "TCG", "GO", "GENERAL", "TCGP"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -659,7 +659,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["SERIE", "VGC", "TCG", "GO", "GENERAL", "TCGP"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -680,7 +680,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC", "GENERAL", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -722,7 +722,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC", "GENERAL", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -731,7 +731,7 @@
         "correcta": "Smeargle",
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -749,7 +749,7 @@
         "correcta": "Smeargle",
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -771,7 +771,7 @@
         "correctas": [6, 7, 8],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["SERIE", "GO", "VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -815,7 +815,7 @@
         "correctas": [6, 7, 8],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["SERIE", "GO", "VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -831,7 +831,7 @@
         "correcta": 3,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC", "GO", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -863,7 +863,7 @@
         "correcta": 3,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC", "GO", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -877,7 +877,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -905,7 +905,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -919,7 +919,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["SERIE", "VGC", "GO", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -947,7 +947,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["SERIE", "VGC", "GO", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -968,7 +968,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1010,7 +1010,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1024,7 +1024,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -1052,7 +1052,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -1073,7 +1073,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL", "VGC", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1115,7 +1115,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL", "VGC", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1136,7 +1136,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1178,7 +1178,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1195,7 +1195,7 @@
         "correctas": [0, 1, 2, 4],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -1229,7 +1229,7 @@
         "correctas": [0, 1, 2, 4],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -1250,7 +1250,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1292,7 +1292,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1306,7 +1306,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -1334,7 +1334,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -1348,7 +1348,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -1376,7 +1376,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -1393,7 +1393,7 @@
         "correctas": [3, 5],
         "puntuacion": { "por_opcion": 0.5, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -1427,7 +1427,7 @@
         "correctas": [3, 5],
         "puntuacion": { "por_opcion": 0.5, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -1448,7 +1448,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1490,7 +1490,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1507,7 +1507,7 @@
         "correctas": [0, 2],
         "puntuacion": { "por_opcion": 0.5, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -1541,7 +1541,7 @@
         "correctas": [0, 2],
         "puntuacion": { "por_opcion": 0.5, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -1555,7 +1555,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -1583,7 +1583,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -1598,7 +1598,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1628,7 +1628,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1642,7 +1642,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -1670,7 +1670,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -1691,7 +1691,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1733,7 +1733,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1754,7 +1754,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1796,7 +1796,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1810,7 +1810,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1838,7 +1838,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1855,7 +1855,7 @@
         "correctas": [0, 2, 4],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -1889,7 +1889,7 @@
         "correctas": [0, 2, 4],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -1908,7 +1908,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "TCG", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -1946,7 +1946,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "TCG", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -1959,7 +1959,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -1985,7 +1985,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -2001,7 +2001,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -2033,7 +2033,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -2047,7 +2047,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -2075,7 +2075,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -2092,7 +2092,7 @@
         "correctas": [0, 2, 3, 5],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -2126,7 +2126,7 @@
         "correctas": [0, 2, 3, 5],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -2141,7 +2141,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG", "VGC", "GO", "UNITE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -2171,7 +2171,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG", "VGC", "GO", "UNITE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -2192,7 +2192,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -2234,7 +2234,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -2248,7 +2248,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -2276,7 +2276,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -2301,7 +2301,7 @@
         "correctas": [2, 3],
         "puntuacion": { "por_opcion": 0.5, "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -2351,7 +2351,7 @@
         "correctas": [2, 3],
         "puntuacion": { "por_opcion": 0.5, "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -2372,7 +2372,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -2414,7 +2414,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -2428,7 +2428,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -2456,7 +2456,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -2481,7 +2481,7 @@
         "correctas": [0, 1, 2, 3],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -2531,7 +2531,7 @@
         "correctas": [0, 1, 2, 3],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -2545,7 +2545,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC", "GO", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -2573,7 +2573,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC", "GO", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -2594,7 +2594,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -2636,7 +2636,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -2657,7 +2657,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -2699,7 +2699,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -2714,7 +2714,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -2744,7 +2744,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -2758,7 +2758,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -2786,7 +2786,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -2801,7 +2801,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -2831,7 +2831,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -2845,7 +2845,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -2873,7 +2873,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.2 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -2883,7 +2883,7 @@
             "Ferrosaco",
             "Bramaluna",
             "Ferropalmas",
-            "Colargentea",
+            "Reptalada",
             "Ferropuño",
             "Pelarena"
         ],
@@ -2898,7 +2898,7 @@
         "correctas": [0, 2, 4],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -2948,7 +2948,7 @@
         "correctas": [0, 2, 4],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -2963,7 +2963,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.5 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -2993,7 +2993,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.5 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -3008,7 +3008,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -3038,7 +3038,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -3059,7 +3059,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -3101,7 +3101,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -3122,7 +3122,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -3164,7 +3164,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -3177,7 +3177,7 @@
         ],
         "puntuacion": { "por_campo": 0.4, "total": 1.2 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -3203,7 +3203,7 @@
         ],
         "puntuacion": { "por_campo": 0.4, "total": 1.2 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -3228,7 +3228,7 @@
         "correctas": [2, 3, 4, 5],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3278,7 +3278,7 @@
         "correctas": [2, 3, 4, 5],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3299,7 +3299,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -3341,7 +3341,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -3361,7 +3361,7 @@
         "correctas": [0, 2, 4, 5, 7],
         "puntuacion": { "por_opcion": 0.2, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3401,7 +3401,7 @@
         "correctas": [0, 2, 4, 5, 7],
         "puntuacion": { "por_opcion": 0.2, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3417,7 +3417,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -3449,7 +3449,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -3465,7 +3465,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.8 },
         "categoria": ["SERIE", "GENERAL", "TCG", "VGC", "TCGP", "UNITE", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -3497,7 +3497,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.8 },
         "categoria": ["SERIE", "GENERAL", "TCG", "VGC", "TCGP", "UNITE", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -3513,7 +3513,7 @@
         "correctas": [0, 1, 3],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3545,7 +3545,7 @@
         "correctas": [0, 1, 3],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3561,7 +3561,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL", "VGC", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -3593,7 +3593,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL", "VGC", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -3606,7 +3606,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1.5 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -3632,7 +3632,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1.5 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -3657,7 +3657,7 @@
         "correctas": [0, 1, 2, 4],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["VGC", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3707,7 +3707,7 @@
         "correctas": [0, 1, 2, 4],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["VGC", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3723,7 +3723,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -3755,7 +3755,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -3769,7 +3769,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -3797,7 +3797,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -3815,7 +3815,7 @@
         "correctas": [0, 1, 2, 3],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3851,7 +3851,7 @@
         "correctas": [0, 1, 2, 3],
         "puntuacion": { "por_opcion": 0.25, "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -3864,12 +3864,12 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
         "tipo": "multi",
-        "pregunta": "¿Cuál es la habilidad de estos iniciales? (+0,33p asmatutako bakoitzeko - 1p arte)",
+        "pregunta": "Zein da inizial hauen trebetasuna? (+0,33p asmatutako bakoitzeko - 1p arte)",
         "campos": [
             { "id": "ha_meowscarada", "label": "Meowscarada", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png", "tipo": "text", "correcta": ["Loditasun", "Espesura", "Overgrow"] },
             { "id": "ha_skeledirge", "label": "Skeledirge", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png", "tipo": "text", "correcta": ["Mar Llamas", "Blaze"] },
@@ -3882,7 +3882,7 @@
     },
     {
         "tipo": "multi",
-        "pregunta": "¿Cuál es la habilidad de estos iniciales? (+0.33p for each correct answer - up to 1p)",
+        "pregunta": "What are the abilities of these starters? (+0.33p for each correct answer - up to 1p)",
         "campos": [
             { "id": "ha_meowscarada", "label": "Meowscarada", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png", "tipo": "text", "correcta": "Overgrow" },
             { "id": "ha_skeledirge", "label": "Skeledirge", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png", "tipo": "text", "correcta": "Blaze" },
@@ -3890,7 +3890,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -3905,7 +3905,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.5 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -3935,7 +3935,7 @@
         ],
         "puntuacion": { "por_campo": 0.3, "total": 1.5 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -3951,7 +3951,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"],
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -3983,7 +3983,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"],
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -3999,7 +3999,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -4031,7 +4031,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -4047,7 +4047,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -4079,7 +4079,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -4110,7 +4110,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4172,7 +4172,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4188,7 +4188,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -4220,7 +4220,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -4236,7 +4236,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -4268,7 +4268,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -4284,7 +4284,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -4316,7 +4316,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -4346,7 +4346,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 5 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4406,7 +4406,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 5 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4428,7 +4428,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 3 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4472,7 +4472,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 3 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4498,7 +4498,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 4 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4550,7 +4550,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 4 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4572,7 +4572,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1.5 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4616,7 +4616,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1.5 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4634,7 +4634,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4670,7 +4670,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4686,7 +4686,7 @@
         "correcta": 2,
         "puntuacion": { "total": 0.1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -4718,7 +4718,7 @@
         "correcta": 2,
         "puntuacion": { "total": 0.1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -4736,7 +4736,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4772,7 +4772,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4789,7 +4789,7 @@
         "correctas": [0, 1, 2, 3, 4],
         "puntuacion": { "por_opcion": 0.24, "total": 1.2 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -4823,7 +4823,7 @@
         "correctas": [0, 1, 2, 3, 4],
         "puntuacion": { "por_opcion": 0.24, "total": 1.2 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -4848,7 +4848,7 @@
         ],
         "puntuacion": { "por_campo": 0.666, "total": 2 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4898,7 +4898,7 @@
         ],
         "puntuacion": { "por_campo": 0.666, "total": 2 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4915,7 +4915,7 @@
         ],
         "puntuacion": { "por_campo": 0.2, "total": 1.4 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -4949,7 +4949,7 @@
         ],
         "puntuacion": { "por_campo": 0.2, "total": 1.4 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -4974,7 +4974,7 @@
         "correctas": [0, 1, 3, 5],
         "puntuacion": { "por_opcion": 0.3, "total": 1.2 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -5024,7 +5024,7 @@
         "correctas": [0, 1, 3, 5],
         "puntuacion": { "por_opcion": 0.3, "total": 1.2 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -5034,7 +5034,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5054,7 +5054,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5064,7 +5064,7 @@
         "correcta": 3,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5084,7 +5084,7 @@
         "correcta": 3,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5100,7 +5100,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5132,24 +5132,24 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
         "tipo": "text",
         "pregunta": "¿Qué combinación de tipos tiene Scovillain? (+1p)",
         "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
-        "correcta": ["Planta/Fuego", "Planta y Fuego", "Fuego/Planta", "Fuego y Planta"],
+        "correcta": ["Planta/Fuego", "Planta y Fuego", "Fuego/Planta", "Fuego y Planta", "Planta Fuego", "Fuego Planta"],
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
         "tipo": "text",
         "pregunta": "Zer mota-konbinazio ditu Scovillainek? (+1p)",
         "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
-        "correcta": ["Landare/Sua", "Landare eta Sua", "Sua/Landare", "Sua eta Landare"],
+        "correcta": ["Landare/Sua", "Landare eta Sua", "Sua/Landare", "Sua eta Landare", "Landare Sua", "Sua Landare"],
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL"], 
         "idioma": "Euskera",
@@ -5159,10 +5159,10 @@
         "tipo": "text",
         "pregunta": "What combination of types does Scovillain have? (+1p)",
         "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
-        "correcta": ["Grass/Fire", "Grass and Fire", "Fire/Grass", "Fire and Grass"],
+        "correcta": ["Grass/Fire", "Grass and Fire", "Fire/Grass", "Fire and Grass", "Grass Fire", "Fire Grass"],
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -5172,7 +5172,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5192,7 +5192,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5205,7 +5205,7 @@
         ],
         "puntuacion": { "por_campo": 0.75, "total": 2.25 },
         "categoria": ["GENERAL", "SERIE", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -5231,7 +5231,7 @@
         ],
         "puntuacion": { "por_campo": 0.75, "total": 2.25 },
         "categoria": ["GENERAL", "SERIE", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -5241,7 +5241,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5261,7 +5261,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5271,7 +5271,7 @@
         "correcta": 100,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -5291,7 +5291,7 @@
         "correcta": 100,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -5304,7 +5304,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1.5 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -5330,7 +5330,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1.5 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -5340,7 +5340,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5360,7 +5360,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5376,7 +5376,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5408,7 +5408,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5418,7 +5418,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5438,7 +5438,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5448,7 +5448,7 @@
         "correcta": 200,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -5468,7 +5468,7 @@
         "correcta": 200,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -5478,7 +5478,7 @@
         "correcta": ["5 km", 5, "5km", "cinco", "cinco kilómetros", "cinco kilometros", "5 kilometros", "5 kilómetros", "cinco km"],
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -5498,7 +5498,7 @@
         "correcta": ["5 km", 5, "5km", "five", "five kilometers", "5 kilometers", "five km"],
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -5517,7 +5517,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 9 },
         "categoria": ["VGC", "SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -5555,7 +5555,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 9 },
         "categoria": ["VGC", "SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -5565,7 +5565,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5585,7 +5585,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5595,7 +5595,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5615,7 +5615,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5664,7 +5664,7 @@
         "correctas": [5, 6, 16],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -5762,7 +5762,7 @@
         "correctas": [5, 6, 16],
         "puntuacion": { "por_opcion": 0.333, "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -5772,7 +5772,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5792,7 +5792,7 @@
         "correcta": 2,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5808,7 +5808,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -5840,7 +5840,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -5850,7 +5850,7 @@
         "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/25.gif",
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -5870,7 +5870,7 @@
         "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/25.gif",
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -5919,7 +5919,7 @@
         "correcta": 4,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6017,7 +6017,7 @@
         "correcta": 4,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6030,7 +6030,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -6056,7 +6056,7 @@
         ],
         "puntuacion": { "por_campo": 0.333, "total": 1 },
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -6072,7 +6072,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6104,7 +6104,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6115,7 +6115,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6137,7 +6137,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6147,7 +6147,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6167,7 +6167,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6177,7 +6177,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6197,7 +6197,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6212,7 +6212,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6242,7 +6242,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6254,7 +6254,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 0.5 },
         "categoria": ["GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -6278,7 +6278,7 @@
         ],
         "puntuacion": { "por_campo": 0.25, "total": 0.5 },
         "categoria": ["GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -6288,7 +6288,7 @@
         "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
         "puntuacion": { "total": 0.5 },
         "categoria": ["GENERAL", "VGC", "SERIE", "TCG", "GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6308,7 +6308,7 @@
         "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
         "puntuacion": { "total": 0.5 },
         "categoria": ["GENERAL", "VGC", "SERIE", "TCG", "GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6357,7 +6357,7 @@
         "correcta": 7,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6455,7 +6455,7 @@
         "correcta": 7,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6471,7 +6471,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6503,7 +6503,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["GENERAL", "VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6520,7 +6520,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6554,7 +6554,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6564,7 +6564,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6584,7 +6584,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6594,7 +6594,7 @@
         "correcta": 3,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6614,7 +6614,7 @@
         "correcta": 3,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6624,7 +6624,7 @@
         "correcta":  1,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6644,7 +6644,7 @@
         "correcta":  1,
         "puntuacion": { "total": 1 },
         "categoria": ["GO"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6660,7 +6660,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6692,7 +6692,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6701,7 +6701,7 @@
         "correcta": 18,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -6719,7 +6719,7 @@
         "correcta": 18,
         "puntuacion": { "total": 1 },
         "categoria": ["SERIE", "VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -6729,7 +6729,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG", "TCGP"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6749,7 +6749,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG", "TCGP"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6759,7 +6759,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -6779,7 +6779,7 @@
         "correcta": 1,
         "puntuacion": { "total": 1 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
@@ -6792,7 +6792,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 3 },
         "categoria": ["SERIE", "VGC", "GENERAL", "GO", "TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -6818,7 +6818,7 @@
         ],
         "puntuacion": { "por_campo": 1, "total": 3 },
         "categoria": ["SERIE", "VGC", "GENERAL", "GO", "TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -6836,7 +6836,7 @@
         "correctas": [0, 1, 2, 3, 4, 5],
         "puntuacion": { "por_opcion": 0.5, "total": 3 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -6872,7 +6872,7 @@
         "correctas": [0, 1, 2, 3, 4, 5],
         "puntuacion": { "por_opcion": 0.5, "total": 3 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -6890,7 +6890,7 @@
         "correctas": [0, 1, 3, 5],
         "puntuacion": { "por_opcion": 0.375, "total": 1.5 },
         "categoria": ["VGC", "GENERAL", "TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección múltiple"
     },
     {
@@ -6926,7 +6926,7 @@
         "correctas": [0, 1, 3, 5],
         "puntuacion": { "por_opcion": 0.375, "total": 1.5 },
         "categoria": ["VGC", "GENERAL", "TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección múltiple"
     },
     {
@@ -6935,7 +6935,7 @@
         "correcta": 60,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -6953,7 +6953,7 @@
         "correcta": 60,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -6966,7 +6966,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1.5 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Respuesta"
     },
     {
@@ -6992,7 +6992,7 @@
         ],
         "puntuacion": { "por_campo": 0.5, "total": 1.5 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Respuesta"
     },
     {
@@ -7037,7 +7037,7 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Español europeo",
+        "idioma": "Español-ES",
         "modalidad": "Selección única"
     },
     {
@@ -7127,11 +7127,11 @@
         "correcta": 0,
         "puntuacion": { "total": 1 },
         "categoria": ["TCG"], 
-        "idioma": "Inglés norteamericano",
+        "idioma": "Inglés-US",
         "modalidad": "Selección única"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Ordena estos Pokémon de menor a mayor nivel de evolución necesaria: (+0,25p por cada acierto - hasta 1p)",
         "opciones": [
             { "id": "Ivysaur", "nombre": "Ivysaur", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" },
@@ -7142,11 +7142,11 @@
         "correcta": ["Butterfree", "Ivysaur", "Pupitar", "Charizard"],
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["VGC"], 
-        "idioma": "Español europeo",
-        "modalidad": "Ordenar"
+        "idioma": "Español-ES",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Ordenatu Pokémon hauek beharrezko eboluzio-maila txikienetik handienera: (+0,25p asmatutako bakoitzeko - 1p arte)",
         "opciones": [
             { "id": "Ivysaur", "nombre": "Ivysaur", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" },
@@ -7158,10 +7158,10 @@
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["VGC"], 
         "idioma": "Euskera",
-        "modalidad": "Ordenar"
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Order these Pokémon from lowest to highest evolution level required: (+0.25p for each correct answer - up to 1p)",
         "opciones": [
             { "id": "Ivysaur", "nombre": "Ivysaur", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" },
@@ -7172,11 +7172,11 @@
         "correcta": ["Butterfree", "Ivysaur", "Pupitar", "Charizard"],
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["VGC"], 
-        "idioma": "Inglés norteamericano",
-        "modalidad": "Ordenar"
+        "idioma": "Inglés-US",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Ordena estos Pokémon de Kanto según su peso de menor a mayor: (+0,25p por cada acierto - hasta 1p)",
         "opciones": [
             { "id": "Gastly", "nombre": "Gastly", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" },
@@ -7187,11 +7187,11 @@
         "correcta": ["Gastly", "Pikachu", "Charizard", "Snorlax"],
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["SERIE"], 
-        "idioma": "Español europeo",
-        "modalidad": "Ordenar"
+        "idioma": "Español-ES",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Ordenatu Kanto Pokémon hauek bere pisuaren arabera, txikienetik handienera: (+0,25p asmatutako bakoitzeko - 1p arte)",
         "opciones": [
             { "id": "Gastly", "nombre": "Gastly", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" },
@@ -7203,10 +7203,10 @@
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["SERIE", "VGC", "GENERAL"], 
         "idioma": "Euskera",
-        "modalidad": "Ordenar"
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Order these Kanto Pokémon from lightest to heaviest by weight: (+0.25p for each correct answer - up to 1p)",
         "opciones": [
             { "id": "Gastly", "nombre": "Gastly", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" },
@@ -7217,11 +7217,11 @@
         "correcta": ["Gastly", "Pikachu", "Charizard", "Snorlax"],
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["SERIE", "VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
-        "modalidad": "Ordenar"
+        "idioma": "Inglés-US",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Ordena estos iniciales de agua por su número de Pokédex: (+0,4p por cada acierto - hasta 2p)",
         "opciones": [
             { "id": "Squirtle", "nombre": "Squirtle", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" },
@@ -7233,11 +7233,11 @@
         "correcta": ["Squirtle", "Totodile", "Mudkip", "Piplup", "Oshawott"],
         "puntuacion": { "total": 2, "por_elemento": 0.4 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Español europeo",
-        "modalidad": "Ordenar"
+        "idioma": "Español-ES",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Ordenatu uraren inizial hauek Pokédex zenbakiaren arabera: (+0,4p asmatutako bakoitzeko - 2p arte)",
         "opciones": [
             { "id": "Squirtle", "nombre": "Squirtle", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" },
@@ -7250,10 +7250,10 @@
         "puntuacion": { "total": 2, "por_elemento": 0.4 },
         "categoria": ["VGC", "GENERAL"], 
         "idioma": "Euskera",
-        "modalidad": "Ordenar"
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Order these Water starters by their Pokédex number: (+0.4p for each correct answer - up to 2p)",
         "opciones": [
             { "id": "Squirtle", "nombre": "Squirtle", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" },
@@ -7265,11 +7265,11 @@
         "correcta": ["Squirtle", "Totodile", "Mudkip", "Piplup", "Oshawott"],
         "puntuacion": { "total": 2, "por_elemento": 0.4 },
         "categoria": ["VGC", "GENERAL"], 
-        "idioma": "Inglés norteamericano",
-        "modalidad": "Ordenar"
+        "idioma": "Inglés-US",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Ordena cronológicamente la aparición de estas mecánicas de combate: (+0,25p por cada acierto - hasta 1p)",
         "opciones": [
             { "id": "Megaevolución", "nombre": "Megaevolución", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lucarionite.png" },
@@ -7280,11 +7280,11 @@
         "correcta": ["Megaevolución", "Movimientos Z", "Dinamax / Gigamax", "Teracristalización"],
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["VGC", "GENERAL", "GO"], 
-        "idioma": "Español europeo",
-        "modalidad": "Ordenar"
+        "idioma": "Español-ES",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Kronologikoki ordenatzen du borroka-mekanika hauen agerpena: (+0,25p asmatutako bakoitzeko - 1p arte)",
         "opciones": [
             { "id": "Megaeboluzioa", "nombre": "Megaeboluzioa", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lucarionite.png" },
@@ -7296,10 +7296,10 @@
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["VGC", "GENERAL", "GO"], 
         "idioma": "Euskera",
-        "modalidad": "Ordenar"
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Arrange the appearance of these combat mechanics in chronological order: (+0.25p for each correct answer - up to 1p)",
         "opciones": [
             { "id": "Megaevolution", "nombre": "Megaevolution", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lucarionite.png" },
@@ -7310,11 +7310,11 @@
         "correcta": ["Megaevolution", "Z-Move", "Dinamax / Gigamax", "Tera"],
         "puntuacion": { "total": 1, "por_elemento": 0.25 },
         "categoria": ["VGC", "GENERAL", "GO"], 
-        "idioma": "Inglés norteamericano",
-        "modalidad": "Ordenar"
+        "idioma": "Inglés-US",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Ordena cronológicamente el lanzamiento de estas expansiones de serie A: (+1p por cada acierto - hasta 11p)",
         "opciones": [
             { "id": "Genes Formidables (A1)", "nombre": "Genes Formidables", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"},
@@ -7332,11 +7332,11 @@
         "correcta": ["Genes Formidables (A1)", "La Isla Singular (A1a)", "Pugna Espaciotemporal (A2)", "Luz Triunfal (A2a)", "Festival Brillante (A2b)", "Guardianes Celestiales (A3)", "Crisis Dimensional (A3a)", "Arboleda de Eevee (A3b)", "Saber Marino y Celeste (A4)", "Manantial Oculto (A4a)", "Sobre Deluxe ex (A4b)"],
         "puntuacion": { "total": 11, "por_elemento": 1 },
         "categoria": ["TCGP"], 
-        "idioma": "Español europeo",
-        "modalidad": "Ordenar"
+        "idioma": "Español-ES",
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "A serieko hedapen hauen jaurtiketa kronologikoki ordenatzen du: (+1p asmatutako bakoitzeko - 11p arte)",
         "opciones": [
             { "id": "Genes Formidables (A1)", "nombre": "Genes Formidables", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"},
@@ -7355,10 +7355,10 @@
         "puntuacion": { "total": 11, "por_elemento": 1 },
         "categoria": ["TCGP"], 
         "idioma": "Euskera",
-        "modalidad": "Ordenar"
+        "modalidad": "Clasificar"
     },
     {
-        "tipo": "ordenar",
+        "tipo": "clasificar",
         "pregunta": "Chronologically order the release of these A-series expansions: (+1p for each correct answer - up to 11p)",
         "opciones": [
             { "id": "Genetic Apex (A1)", "nombre": "Genetic Apex", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"},
@@ -7376,7 +7376,280 @@
         "correcta": ["Genetic Apex (A1)", "Mythical Island (A1a)", "Space-Time Smackdown (A2)", "Triumphant Light (A2a)", "Shining Revelry (A2b)", "Celestial Guardians (A3)", "Extradimensional Crisis (A3a)", "Eevee Grove (A3b)", "Wisdom of Sea and Sky (A4)", "Secluded Springs (A4a)", "Deluxe Pack: ex (A4b)"],
         "puntuacion": { "total": 11, "por_elemento": 1 },
         "categoria": ["TCGP"], 
-        "idioma": "Inglés norteamericano",
-        "modalidad": "Ordenar"
+        "idioma": "Inglés-US",
+        "modalidad": "Clasificar"
+    },
+    {
+        "tipo": "number",
+        "pregunta": "¿Cuántos puntos se deben conseguir en una partida de TCGP para ganar? (+1p)",
+        "correcta": 3,
+        "puntuacion": { "total": 1 },
+        "categoria": ["TCGP"], 
+        "idioma": "Español-ES",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "number",
+        "pregunta": "Zenbat puntu lortu behar dira TCGP partida batean irabazteko? (+1p)",
+        "correcta": 3,
+        "puntuacion": { "total": 1 },
+        "categoria": ["TCGP"], 
+        "idioma": "Euskera",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "number",
+        "pregunta": "How many points do you need to score in a TCGP game to win? (+1p)",
+        "correcta": 3,
+        "puntuacion": { "total": 1 },
+        "categoria": ["TCGP"], 
+        "idioma": "Inglés-US",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "clasificar",
+        "pregunta": "En el TCG actual, ¿cuál es el orden correcto de la tabla de tipos? (+0,8p por cada acierto - hasta 8p)",
+        "opciones": [
+            { "id": "Planta", "nombre": "Planta", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/12.png" },
+            { "id": "Fuego", "nombre": "Fuego", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/10.png" },
+            { "id": "Agua", "nombre": "Agua", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/11.png" },
+            { "id": "Eléctrico", "nombre": "Eléctrico", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/13.png" },
+            { "id": "Psíquico", "nombre": "Psíquico", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/14.png" },
+            { "id": "Lucha", "nombre": "Lucha", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/2.png" },
+            { "id": "Oscuro", "nombre": "Oscuro", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/17.png" },
+            { "id": "Metálico", "nombre": "Metálico", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/9.png" },
+            { "id": "Dragón", "nombre": "Dragón", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/16.png" },
+            { "id": "Incoloro", "nombre": "Incoloro", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/1.png" }
+        ],
+        "correcta": ["Planta", "Fuego", "Agua", "Eléctrico", "Psíquico", "Lucha", "Oscuro", "Metálico", "Dragón", "Incoloro"],
+        "puntuacion": { "total": 8, "por_elemento": 0.8 },
+        "categoria": ["TCG"], 
+        "idioma": "Español-ES",
+        "modalidad": "Clasificar"
+    },
+    {
+        "tipo": "clasificar",
+        "pregunta": "Oraingo TCGan, zein da orden zuzena mota-taulan? (+0,8p asmatutako bakoitzeko - 8p arte)",
+        "opciones": [
+            { "id": "Landare", "nombre": "Landare", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/12.png" },
+            { "id": "Sua", "nombre": "Sua", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/10.png" },
+            { "id": "Ura", "nombre": "Ura", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/11.png" },
+            { "id": "Elektriko", "nombre": "Elektriko", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/13.png" },
+            { "id": "Psikiko", "nombre": "Psikiko", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/14.png" },
+            { "id": "Eraso", "nombre": "Eraso", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/2.png" },
+            { "id": "Ilun", "nombre": "Ilun", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/17.png" },
+            { "id": "Metalikoa", "nombre": "Metalikoa", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/9.png" },
+            { "id": "Dragoi", "nombre": "Dragoi", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/16.png" },
+            { "id": "Kolore-gabea", "nombre": "Kolore-gabea", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/1.png" }
+        ],
+        "correcta": ["Landare", "Sua", "Ura", "Elektriko", "Psikiko", "Eraso", "Ilun", "Metalikoa", "Dragoi", "Kolore-gabea"],
+        "puntuacion": { "total": 8, "por_elemento": 0.8 },
+        "categoria": ["TCG"], 
+        "idioma": "Euskera",
+        "modalidad": "Clasificar"
+    },
+    {
+        "tipo": "clasificar",
+        "pregunta": "In the current TCG, what is the correct order of the type chart? (+0.8p for each correct answer - up to 8p)",
+        "opciones": [
+            { "id": "Grass", "nombre": "Grass", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/12.png" },
+            { "id": "Fire", "nombre": "Fire", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/10.png" },
+            { "id": "Water", "nombre": "Water", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/11.png" },
+            { "id": "Electric", "nombre": "Electric", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/13.png" },
+            { "id": "Psychic", "nombre": "Psychic", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/14.png" },
+            { "id": "Fighting", "nombre": "Fighting", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/2.png" },
+            { "id": "Dark", "nombre": "Dark", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/17.png" },
+            { "id": "Metallic", "nombre": "Metallic", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/9.png" },
+            { "id": "Dragon", "nombre": "Dragon", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/16.png" },
+            { "id": "Colorless", "nombre": "Colorless", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/types/generation-ix/scarlet-violet/small/1.png" }
+        ],
+        "correcta": ["Grass", "Fire", "Water", "Electric", "Psychic", "Fighting", "Dark", "Metallic", "Dragon", "Colorless"],
+        "puntuacion": { "total": 8, "por_elemento": 0.8 },
+        "categoria": ["TCG"], 
+        "idioma": "Inglés-US",
+        "modalidad": "Clasificar"
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "En TCGP, ¿Qué ocurre si un jugador se queda sin cartas para robar? (+1p)",
+        "opciones": [
+            "Pierde la partida inmediatamente.",
+            "Sigue jugando aunque no pueda robar.",
+            "Baraja el descarte y crea un nuevo mazo.",
+            "Roba un punto de victoria el rival."
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 },
+        "categoria": ["TCGP"],
+        "idioma": "Español-ES",
+        "modalidad": "Selección única"
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "TCGPn, zer gertatzen da jokalari bat kartarik gabe geratzen bada lapurtzeko? (+1p)",
+        "opciones": [
+            "Galtzen du partida berehala.",
+            "Jokatzen jarraitzen du, baina ezin du kartarik hartu.",
+            "Baztertuta dituen kartekin beste pilo bat sortzen du.",
+            "Garaipen puntu bat lapurtu du aurkariak."
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 },
+        "categoria": ["TCGP"],
+        "idioma": "Euskera",
+        "modalidad": "Selección única"
+    },
+    {
+        "tipo": "radio",
+        "pregunta": "On TCGP, what happens to a player who runs out of cards on his deck? (+1p)",
+        "opciones": [
+            "Loses the match automatically.",
+            "It keeps playing but without drawing cards.",
+            "It shuffles its discard deck and creates a new one.",
+            "Steals a win-point from the rival."
+        ],
+        "correcta": 1,
+        "puntuacion": { "total": 1 },
+        "categoria": ["TCGP"],
+        "idioma": "Inglés-US",
+        "modalidad": "Selección única"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "¿Cuántas cartas tiene el Base Set original en el TCG? (+1p)",
+        "correcta": "102",
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Español-ES",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "Zenbat karta daude Base Set originalean TCGean? (+1p)",
+        "correcta": "102",
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Euskera",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "How many cards are on the original Base Set in the TCG? (+1p)",
+        "correcta": "102",
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Inglés-US",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "¿Cuáles son los primeros dos Pokémon que aparecen en el primer episodio de la primera temporada del anime? (+1p)",
+        "correcta": ["Gengar y Nidorino", "Nidorino y Gengar", "Nidorino Gengar", "Gengar Nidorino", "Gengar, Nidorino", "Nidorino, Gengar"],
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Español-ES",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "Zeintzuk dira animearen lehen denboraldiko lehen atalean agertzen diren lehenengo bi Pokémonak? (+1p)",
+        "correcta": ["Gengar eta Nidorino", "Nidorino eta Gengar", "Nidorino Gengar", "Gengar Nidorino", "Gengar, Nidorino", "Nidorino, Gengar"],
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Euskera",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "What are the first two Pokémon that appear in the first episode of the first season of the anime? (+1p)",
+        "correcta": ["Gengar and Nidorino", "Nidorino and Gengar", "Nidorino Gengar", "Gengar Nidorino", "Gengar, Nidorino", "Nidorino, Gengar"],
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Inglés-US",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "¿Qué Pokémon aparece en la caja del videojuego 'Pokémon Rojo'? (+1p)",
+        "correcta": "Charizard",
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Español-ES",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "Zer Pokemon agertzen da 'Pokémon Gorri' bideojokoaren kutxan? (+1p)",
+        "correcta": "Charizard",
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Euskera",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "text",
+        "pregunta": "Which Pokémon appears on the box of the video game 'Pokémon Red'? (+1p)",
+        "correcta": "Charizard",
+        "puntuacion": { "total": 1 },
+        "categoria": ["TRADEITTO"], 
+        "idioma": "Inglés-US",
+        "modalidad": "Respuesta"
+    },
+    {
+        "tipo": "unir",
+        "pregunta": "Une la altura correcta a cada Pokémon (+0,5p por cada acierto - hasta 2p)",
+        "opciones_izq": ["Riolu", "Lucario", "Zeraora", "Eevee"],
+        "opciones_der": ["0,7m", "1,2m", "1,5m", "0,3m"],
+        "correcta": {
+            "Riolu": "0,7m",
+            "Lucario": "1,2m",
+            "Zeraora": "1,5m",
+            "Eevee": "0,3m"
+        },
+        "puntuacion": {
+            "por_acierto": 0.5,
+            "total": 2
+        },
+        "categoria": ["GENERAL"],
+        "idioma": "Español-ES",
+        "modalidad": "Unir"
+    },
+    {
+        "tipo": "unir",
+        "pregunta": "Lotu altuera zuzena Pokemon bakoitzari (+0,5p asmatutako bakoitzeko - 2p arte)",
+        "opciones_izq": ["Riolu", "Lucario", "Zeraora", "Eevee"],
+        "opciones_der": ["0,7m", "1,2m", "1,5m", "0,3m"],
+        "correcta": {
+            "Riolu": "0,7m",
+            "Lucario": "1,2m",
+            "Zeraora": "1,5m",
+            "Eevee": "0,3m"
+        },
+        "puntuacion": {
+            "por_acierto": 0.5,
+            "total": 2
+        },
+        "categoria": ["GENERAL"],
+        "idioma": "Euskera",
+        "modalidad": "Unir"
+    },
+    {
+        "tipo": "unir",
+        "pregunta": "Match the correct height to each Pokémon (+0.5p for each correct answer - up to 2p)",
+        "opciones_izq": ["Riolu", "Lucario", "Zeraora", "Eevee"],
+        "opciones_der": ["2' 04'' / 0,7m", "3' 11'' / 1,2m", "4' 11'' / 1,5m", "1' 00'' / 0.3m"],
+        "correcta": {
+            "Riolu": "2' 04'' / 0,7m",
+            "Lucario": "3' 11'' / 1,2m",
+            "Zeraora": "4' 11'' / 1,5m",
+            "Eevee": "1' 00'' / 0.3m"
+        },
+        "puntuacion": {
+            "por_acierto": 0.5,
+            "total": 2
+        },
+        "categoria": ["GENERAL"],
+        "idioma": "Inglés-US",
+        "modalidad": "Unir"
     }
 ]
