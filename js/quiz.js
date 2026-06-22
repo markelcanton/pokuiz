@@ -176,7 +176,7 @@ function mostrarPreguntaAleatoria() {
         inputDiv.innerHTML = "";
         inputDiv.className = "";
 
-        if (preguntaActual.tipo === "ordenar") {
+        if (preguntaActual.tipo === "clasificar") {
             const dragList = document.createElement("div");
             dragList.className = "drag-container";
             const opcionesMezcladas = [...preguntaActual.opciones].sort(() => Math.random() - 0.5);
@@ -259,7 +259,86 @@ function mostrarPreguntaAleatoria() {
                         ${op}
                     </label>`;
             });
-        } 
+        } else if (preguntaActual.tipo === "unir") {
+            inputDiv.className = "unir-container-wrapper";
+
+            const paletaColores = ['#d5f5e3', '#d6eaf8', '#fcf3cf', '#f5eef8', '#fadbd8', '#e8f8f5', '#eaf2f8', '#fef9e7', '#f4ecf7', '#fdedec'];
+            let itemSeleccionado = null;
+            let conexiones = {}; 
+            let colorIndex = 0;
+
+            // 1. Renderizar columnas mezcladas
+            const mezclar = (arr) => [...arr].sort(() => Math.random() - 0.5);
+            const generarColHTML = (id, items) => `
+                <div class="unir-columna" id="${id}">
+                    ${items.map(txt => `<div class="unir-item" data-col="${id === 'unir-izq' ? 'izq' : 'der'}" data-val="${txt}">${txt}</div>`).join('')}
+                </div>
+            `;
+
+            inputDiv.innerHTML = `
+                <div class="unir-columnas-flex">
+                    ${generarColHTML('unir-izq', mezclar(preguntaActual.opciones_izq))}
+                    ${generarColHTML('unir-der', mezclar(preguntaActual.opciones_der))}
+                </div>
+            `;
+
+            // 2. Eventos de clic para los elementos
+            inputDiv.querySelectorAll('.unir-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    if (document.getElementById('btn-nueva').style.display !== "none") return;
+
+                    // Si ya está unido, romper la unión al pulsar
+                    if (this.classList.contains('paired')) {
+                        const val = this.dataset.val;
+                        const valIzq = this.dataset.col === 'izq' 
+                            ? val 
+                            : Object.keys(conexiones).find(k => conexiones[k].val_der === val);
+
+                        if (!valIzq) return;
+
+                        const elIzq = inputDiv.querySelector(`#unir-izq [data-val="${valIzq}"]`);
+                        const elDer = inputDiv.querySelector(`#unir-der [data-val="${conexiones[valIzq].val_der}"]`);
+
+                        [elIzq, elDer].forEach(el => {
+                            if (el) {
+                                el.classList.remove('paired');
+                                el.style.removeProperty('background-color');
+                            }
+                        });
+                        delete conexiones[valIzq];
+                        return;
+                    }
+
+                    // Manejo de selecciones y cancelaciones
+                    if (!itemSeleccionado || itemSeleccionado.dataset.col === this.dataset.col) {
+                        if (itemSeleccionado) itemSeleccionado.classList.remove('selected');
+                        if (itemSeleccionado === this) {
+                            itemSeleccionado = null;
+                        } else {
+                            itemSeleccionado = this;
+                            itemSeleccionado.classList.add('selected');
+                        }
+                        return;
+                    }
+
+                    // Crear unión válida
+                    const elIzq = itemSeleccionado.dataset.col === 'izq' ? itemSeleccionado : this;
+                    const elDer = itemSeleccionado.dataset.col === 'der' ? itemSeleccionado : this;
+                    
+                    const colorAsignado = paletaColores[colorIndex % paletaColores.length];
+                    colorIndex++;
+
+                    [elIzq, elDer].forEach(el => {
+                        el.classList.remove('selected');
+                        el.classList.add('paired');
+                        el.style.backgroundColor = colorAsignado;
+                    });
+
+                    conexiones[elIzq.dataset.val] = { val_der: elDer.dataset.val };
+                    itemSeleccionado = null;
+                });
+            });
+        }
         else {
             inputDiv.innerHTML = `<div class="input-simple-container"><input type="text" id="main_input" autocomplete="off" placeholder="Escribe aquí..."></div>`;
         }
@@ -293,7 +372,7 @@ document.getElementById("btn-comprobar").onclick = () => {
     let solHTML = ""; 
     let maxPuntosPregunta = 0;
 
-    if (preguntaActual.tipo === "ordenar") {
+    if (preguntaActual.tipo === "clasificar") {
         maxPuntosPregunta = preguntaActual.puntuacion?.total || 1;
 
         const puntosPorElemento = preguntaActual.puntuacion?.por_elemento || (maxPuntosPregunta / preguntaActual.opciones.length);
@@ -343,7 +422,47 @@ document.getElementById("btn-comprobar").onclick = () => {
             }
         });
         solHTML = `Las correctas eran: <b>${preguntaActual.correctas.map(i => preguntaActual.opciones[i]).join(", ")}</b>`;
-    } 
+    } else if (preguntaActual.tipo === "unir") {
+        maxPuntosPregunta = preguntaActual.puntuacion?.total || 1;
+        const totalParejas = Object.keys(preguntaActual.correcta).length;
+        const puntosPorPareja = maxPuntosPregunta / totalParejas;
+
+        let lineasSolucion = [];
+        
+        // Recorremos las respuestas correctas definidas en el JSON
+        Object.keys(preguntaActual.correcta).forEach(izqKey => {
+            const derCorrecto = preguntaActual.correcta[izqKey];
+            
+            // Buscamos si el usuario llegó a unir este elemento izquierdo en la interfaz
+            const itemIzqElement = document.querySelector(`#unir-izq [data-val="${izqKey}"]`);
+            
+            // Para comprobar la respuesta de forma segura en el DOM tras jugar:
+            if (itemIzqElement && itemIzqElement.classList.contains('paired')) {
+                // Conseguimos el color o el estado verificando de forma dinámica con los elementos del DOM
+                // Pero para asegurar la nota usamos la lógica del estado final de los elementos visuales
+            }
+            
+            // Nota: Mapeamos los elementos emparejados visualmente para ver si coinciden con el JSON
+            const itemsUnidos = Array.from(document.querySelectorAll('#unir-izq .unir-item.paired'));
+            const tieneParejaCorrecta = itemsUnidos.some(el => {
+                if (el.dataset.val === izqKey) {
+                    // Encontrar qué elemento de la derecha comparte su mismo color de fondo
+                    const colorIzq = el.style.backgroundColor;
+                    const elDer = Array.from(document.querySelectorAll('#unir-der .unir-item.paired'))
+                                       .find(d => d.style.backgroundColor === colorIzq);
+                    return elDer && elDer.dataset.val === derCorrecto;
+                }
+                return false;
+            });
+
+            if (tieneParejaCorrecta) {
+                notaP += puntosPorPareja;
+            }
+            lineasSolucion.push(`• ${izqKey} ↔ <b>${derCorrecto}</b>`);
+        });
+
+        solHTML = `Las uniones correctas eran:<br>${lineasSolucion.join('<br>')}`;
+    }
     else {
         maxPuntosPregunta = preguntaActual.puntuacion?.total || 1;
         const v = document.getElementById("main_input").value.trim().toLowerCase();
