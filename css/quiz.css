@@ -11,9 +11,7 @@
     transform: translateY(0);
 }
 
-#contenedor-pregunta,
-.input-simple-container,
-#input-dinamico {
+#contenedor-pregunta, .input-simple-container, #input-dinamico {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
