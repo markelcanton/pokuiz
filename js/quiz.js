@@ -267,7 +267,6 @@ function mostrarPreguntaAleatoria() {
             let conexiones = {}; 
             let colorIndex = 0;
 
-            // 1. Renderizar columnas mezcladas
             const mezclar = (arr) => [...arr].sort(() => Math.random() - 0.5);
             const generarColHTML = (id, items) => `
                 <div class="unir-columna" id="${id}">
@@ -282,12 +281,10 @@ function mostrarPreguntaAleatoria() {
                 </div>
             `;
 
-            // 2. Eventos de clic para los elementos
             inputDiv.querySelectorAll('.unir-item').forEach(item => {
                 item.addEventListener('click', function() {
                     if (document.getElementById('btn-nueva').style.display !== "none") return;
 
-                    // Si ya está unido, romper la unión al pulsar
                     if (this.classList.contains('paired')) {
                         const val = this.dataset.val;
                         const valIzq = this.dataset.col === 'izq' 
@@ -309,7 +306,6 @@ function mostrarPreguntaAleatoria() {
                         return;
                     }
 
-                    // Manejo de selecciones y cancelaciones
                     if (!itemSeleccionado || itemSeleccionado.dataset.col === this.dataset.col) {
                         if (itemSeleccionado) itemSeleccionado.classList.remove('selected');
                         if (itemSeleccionado === this) {
@@ -321,7 +317,6 @@ function mostrarPreguntaAleatoria() {
                         return;
                     }
 
-                    // Crear unión válida
                     const elIzq = itemSeleccionado.dataset.col === 'izq' ? itemSeleccionado : this;
                     const elDer = itemSeleccionado.dataset.col === 'der' ? itemSeleccionado : this;
                     
@@ -429,24 +424,18 @@ document.getElementById("btn-comprobar").onclick = () => {
 
         let lineasSolucion = [];
         
-        // Recorremos las respuestas correctas definidas en el JSON
         Object.keys(preguntaActual.correcta).forEach(izqKey => {
             const derCorrecto = preguntaActual.correcta[izqKey];
             
-            // Buscamos si el usuario llegó a unir este elemento izquierdo en la interfaz
             const itemIzqElement = document.querySelector(`#unir-izq [data-val="${izqKey}"]`);
             
-            // Para comprobar la respuesta de forma segura en el DOM tras jugar:
             if (itemIzqElement && itemIzqElement.classList.contains('paired')) {
-                // Conseguimos el color o el estado verificando de forma dinámica con los elementos del DOM
-                // Pero para asegurar la nota usamos la lógica del estado final de los elementos visuales
+                
             }
             
-            // Nota: Mapeamos los elementos emparejados visualmente para ver si coinciden con el JSON
             const itemsUnidos = Array.from(document.querySelectorAll('#unir-izq .unir-item.paired'));
             const tieneParejaCorrecta = itemsUnidos.some(el => {
                 if (el.dataset.val === izqKey) {
-                    // Encontrar qué elemento de la derecha comparte su mismo color de fondo
                     const colorIzq = el.style.backgroundColor;
                     const elDer = Array.from(document.querySelectorAll('#unir-der .unir-item.paired'))
                                        .find(d => d.style.backgroundColor === colorIzq);
