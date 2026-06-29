@@ -20,7 +20,7 @@ let numOpcionesDisponibles = 6;
 let numSlotsSecuencia = 4;
 
 let codigoSecreto = [];
-let seleccionUsuario = Array(4).fill(null);
+let seleccionUsuario = Array(numSlotsSecuencia).fill(null);
 let pokemonPartida = [];
 
 document.getElementById("btn-configuracion").onclick = () => {
@@ -51,6 +51,8 @@ document.getElementById("btn-guardar-config").onclick = () => {
         numOpcionesDisponibles = POKEMON_DISPONIBLES.length;
         numSlotsSecuencia = 4;
     }
+
+    seleccionUsuario = Array(numSlotsSecuencia).fill(null);
 
     document.getElementById("modal-configuracion").style.display = "none";
     reiniciarPartidaCompleta();
