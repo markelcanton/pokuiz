@@ -1,0 +1,165 @@
+.game-container {
+    background-color: #1a1a1f;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    border: 1px solid #2a2a35;
+}
+
+.pokemon-canvas {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 20px auto;
+    background: white;
+    /*background: radial-gradient(circle, #2a2a35 0%, #111111 100%);*/
+    border-radius: 12px;
+    border: 2px dashed #ccc;
+    /*border: 3px solid #3b4cca;*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer-skin {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: #808080;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    z-index: 1;
+}
+
+.result-message {
+    display: none;
+}
+
+.layer-details {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    z-index: 2;
+    pointer-events: none;
+    filter: grayscale(1) contrast(1.5) brightness(0.9);
+    mix-blend-mode: multiply;
+    opacity: 0.85;
+}
+
+.pokemon-canvas.revealed .layer-skin {
+    background-color: transparent !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    background-image: var(--poke-img);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
+}
+
+.pokemon-canvas.revealed .layer-details {
+    display: none;
+}
+
+.sliders-section {
+    /*margin-top: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;*/
+
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.hex-display {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.slider-group {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.slider-group label {
+    width: 25px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.slider-group input[type="range"] {
+    flex-grow: 1;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.slider-group input[type="range"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#red {
+    accent-color: #ff4a4a;
+}
+
+#green {
+    accent-color: #2ed573;
+}
+
+#blue {
+    accent-color: #1e90ff;
+}
+
+.slider-group span {
+    width: 35px;
+    font-family: monospace;
+}
+
+button {
+    background: linear-gradient(145deg, #ee1515, #b31010);
+    min-width: 180px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.result-message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 45px;
+}
