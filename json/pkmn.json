@@ -12,8 +12,11 @@
     { "id": 20, "name": "Raticate", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png" },
     { "id": 25, "name": "Pikachu", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" },
     { "id": 26, "name": "Raichu", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png" },
+    { "id": 26001, "name": "Raichu de Alola", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/pokemon/other/official-artwork/10100.png" },
     { "id": 37, "name": "Vulpix", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png" },
+    { "id": 37001, "name": "Vulpix de Alola", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10103.png" },
     { "id": 38, "name": "Ninetales", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png" },
+    { "id": 38001, "name": "Ninetales de Alola", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png" },
     { "id": 39, "name": "Jigglypuff", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png" },
     { "id": 52, "name": "Meowth", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png" },
     { "id": 54, "name": "Psyduck", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png" },
@@ -126,6 +129,7 @@
     { "id": 446, "name": "Munchlax", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png" },
     { "id": 447, "name": "Riolu", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png" },
     { "id": 448, "name": "Lucario", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png" },
+    { "id": 448001, "name": "Mega-Lucario", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10059.png" },
     { "id": 453, "name": "Croagunk", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/453.png" },
     { "id": 470, "name": "Leafeon", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png" },
     { "id": 471, "name": "Glaceon", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png" },
@@ -261,6 +265,6 @@
     { "id": 1017, "name": "Ogerpon", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1017.png" },
     { "id": 1019, "name": "Hydrapple", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1019.png" },
     { "id": 1020, "name": "Flamariete / Gouging Fire", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1020.png" },
-    { "id": 1021, "name": "Electrofuria / Raging Bolt", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/921.png" },
+    { "id": 1021, "name": "Electrofuria / Raging Bolt", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1021.png" },
     { "id": 1024, "name": "Terapagos", "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1024.png" }
 ]
