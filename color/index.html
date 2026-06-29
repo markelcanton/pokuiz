@@ -1,0 +1,63 @@
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PoKuiz</title>
+        <link rel="icon" type="image/png" href="../img/logo/pokuizT.png">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/anticheat.css">
+        <link rel="stylesheet" href="../css/color.css">
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo/pokuizLogo.png" title="Logotipo de PoKuiz" alt="Logotipo de PoKuiz">
+            <nav class="nav-buttons">
+                <a href="../">Inicio</a>
+                <a href="../about">Créditos</a>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <h1>¿De qué color es este Pokémon?</h1>
+                <hr size="1">
+
+                <div id="pokeCanvas" class="pokemon-canvas">
+                    <div id="layerSkin" class="layer-skin"></div>
+                    <img id="layerDetails" class="layer-details" src="" alt="Detalles" crossorigin="anonymous">
+                </div>
+
+                <div class="sliders-section">
+                    <div class="hex-display" id="hexValue">#808080</div>
+
+                    <div class="slider-group">
+                        <label style="color: red;">R</label>
+                        <input type="range" id="red" min="0" max="255" value="128" oninput="updateLiveColor()">
+                        <span id="rVal">128</span>
+                    </div>
+                    <div class="slider-group">
+                        <label style="color: green;">G</label>
+                        <input type="range" id="green" min="0" max="255" value="128" oninput="updateLiveColor()">
+                        <span id="gVal">128</span>
+                    </div>
+                    <div class="slider-group">
+                        <label style="color: blue;">B</label>
+                        <input type="range" id="blue" min="0" max="255" value="128" oninput="updateLiveColor()">
+                        <span id="bVal">128</span>
+                    </div>
+
+                    <button id="actionBtn" onclick="checkColorAttempt()"></button>
+                </div>
+
+                <div id="resultMessage" class="result-message"></div>
+            </div>
+
+            <canvas id="colorExtractorCanvas" style="display:none;" width="50" height="50"></canvas>
+        </main>
+        <footer>
+            <b>Creado por <a target="_blank" href="https://github.com/markelcanton/" title="https://github.com/markelcanton/">Markel Cantón</a></b>
+            <i class="disclaimer" title="Acerca de PoKuiz">PoKuiz es un trabajo derivado no oficial basado en Pokémon. Los sprites, nombres y demás datos oficiales pertenecen a: © Pokémon/Nintendo/Creatures Inc./GAME FREAK Inc.</i>
+        </footer>
+    </body>
+    <script src="../js/loadfade.js"></script>
+    <script src="../js/anticheat.js"></script>
+    <script src="../js/color.js"></script>
+</html>
