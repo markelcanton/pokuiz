@@ -18,7 +18,6 @@
     <main>
         <h1>¡Dibuja a todos!</h1>
         <hr size="1">
-        <center><div id="timer" style="padding-top: 2px;">45s</div></center>
         <p>
             <div class="main-game">
                 <div class="reference-box">
@@ -26,19 +25,18 @@
                     <img id="pokemonRef" src="" alt="?" style="display: none;">
                     <div id="placeholder" style="font-size: 5rem;">?</div>
                 </div>
-
                 <canvas id="drawCanvas" width="500" height="500"></canvas>
             </div>
 
             <div class="controls">
-                <button class="btn-main" id="startBtn">Iniciar Juego</button>
+                <button class="btn-main" id="startBtn" title="Pulsa aquí para iniciar">Iniciar juego</button>
                 <div class="tool-group">
-                    <input type="color" id="colorPicker" value="#000000">
-                    <input type="range" id="brushSize" min="1" max="25" value="6">
+                    <input type="color" id="colorPicker" value="#000000" title="Pulsa aquí para abrir la paleta de colores">
+                    <input type="range" id="brushSize" min="1" max="25" value="6" title="Desliza para cambiar el tamaño del pincel">
                 </div>
-                <button class="btn-clear" id="clearBtn">Limpiar lienzo</button>
-                <button class="btn-action" id="saveBtn" disabled>Guardar como PNG</button>
-                <button class="btn-action" id="shareBtn" disabled style="background-color: #9c27b0;">Compartir creación</button>
+                <button class="btn-clear" id="clearBtn" title="Pulsa aquí para limpiar el lienzo por completo">Limpiar lienzo</button>
+                <button class="btn-action" id="saveBtn" title="Pulsa aquí para guardar tu creación en tu dispositivo como PNG" disabled>Guardar como PNG</button>
+                <button class="btn-action" id="shareBtn" title="Pulsa aquí para compartir tu creación por otras aplicaciones" disabled style="background-color: #9c27b0;">Compartir creación</button>
             </div>
         </p>
     </main>
