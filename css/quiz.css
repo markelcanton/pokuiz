@@ -11,7 +11,9 @@
     transform: translateY(0);
 }
 
-#contenedor-pregunta, .input-simple-container, #input-dinamico {
+#contenedor-pregunta,
+.input-simple-container,
+#input-dinamico {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
@@ -168,11 +170,12 @@
 .solucion-box {
     width: 100% !important;
     box-sizing: border-box;
-    background-color: #f9f9f9;
-    border-left: 6px solid #ee1515;
+    /*border-left: 6px solid #ee1515;*/
+    border: 3px dashed #ee1515;
     padding: 20px;
     border-radius: 8px;
     font-size: 1.1em;
+    text-align: left;
 }
 
 #marcadores {
@@ -547,4 +550,11 @@
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: none;
     transform: none;
+}
+
+#resultado {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
