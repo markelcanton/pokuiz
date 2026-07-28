@@ -160,11 +160,11 @@ async function compartirCreacion() {
             try {
                 await navigator.share({
                     files: [archivo],
-                    title: '¡Mira mi dibujo en PoKuiz!',
-                    text: '¿Qué te parece este Pokémon que he dibujado? Crea el tuyo en PoKuiz Draw: https://markelcanton.github.io/pokuiz/draw/'
+                    title: '¡Mira mi dibujo hecho en PoKuiz!',
+                    text: 'Crea el tuyo en PoKuiz (Draw): https://markelcanton.github.io/pokuiz/draw/'
                 });
             } catch (error) {
-                console.log("Compartir cancelado");
+                console.log("User cancelled share.");
             }
         } else {
             alert("Tu navegador o dispositivo no soporta el compartir directamente. Usa 'Guardar como PNG' y compártelo manualmente.");
