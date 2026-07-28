@@ -13,14 +13,25 @@ fetch('../json/preguntas.json')
     aplicarFiltros(true);
 });
 
+function mostrarError(mensaje) {
+    const errorDiv = document.getElementById("error-filtro");
+    const errorTexto = document.getElementById("error-texto");
+    if (errorDiv && errorTexto) {
+        errorTexto.innerText = mensaje;
+        errorDiv.style.display = "flex";
+        setTimeout(() => { errorDiv.style.animation = "none"; }, 400);
+    }
+}
+
 function aplicarFiltros(esCargaInicial = false) {
     const catsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_categoria"]:checked')).map(cb => cb.value);
     const modsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_modalidad"]:checked')).map(cb => cb.value);
+    const difsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_dificultad"]:checked')).map(cb => cb.value);
     const idiomaRadio = document.querySelector('input[name="f_idioma"]:checked');
     const idiomaSeleccionado = idiomaRadio ? idiomaRadio.value : "";
 
-    if (!esCargaInicial && (catsSeleccionadas.length === 0 || modsSeleccionadas.length === 0)) {
-        mostrarError("Debes seleccionar al menos una categoría y una modalidad.");
+    if (!esCargaInicial && (catsSeleccionadas.length === 0 || modsSeleccionadas.length === 0 || difsSeleccionadas.length === 0)) {
+        mostrarError("Debes seleccionar al menos una categoría, una modalidad y una dificultad.");
         return false;
     }
 
@@ -30,7 +41,9 @@ function aplicarFiltros(esCargaInicial = false) {
             : catsSeleccionadas.includes(p.categoria);
         const coincideMod = modsSeleccionadas.includes(p.modalidad);
         const coincideIdioma = p.idioma === idiomaSeleccionado;
-        return coincideCat && coincideMod && coincideIdioma;
+        const coincideDificultad = difsSeleccionadas.includes(p.dificultad);
+
+        return coincideCat && coincideMod && coincideIdioma && coincideDificultad;
     });
 
     if (filtradas.length === 0) {
@@ -51,33 +64,42 @@ function aplicarFiltros(esCargaInicial = false) {
 function actualizarMarcadores() {
     const m = document.getElementById("marcadores");
     if (!m) return;
-    
-    if (respondidas === 0) {
-        m.innerHTML = `
-            <div class="marcador-box" style="min-width: 250px;">
-                <span class="marcador-label"></span>
-                <span class="marcador-value" style="font-style: italic; font-size: 1.1rem;">Responde para ver tu nota</span>
-            </div>
-        `;
-        return;
-    }
-    
+
     const nota = puntosMaximosPosibles > 0 ? (puntos / puntosMaximosPosibles) * 10 : 0;
+    const notaTexto = respondidas === 0 ? "—" : `${Number(nota.toFixed(1))} / 10`;
+    const colorNota = respondidas === 0 ? '#333' : (nota < 5 ? '#da1616' : '#2e7d32');
+
+    const dificultad = preguntaActual?.dificultad || "Normal";
     
+    let colorDificultad = '#333';
+    if (dificultad.toLowerCase().includes('fácil') || dificultad.toLowerCase().includes('facil')) colorDificultad = '#2e7d32';
+    else if (dificultad.toLowerCase().includes('media') || dificultad.toLowerCase().includes('normal')) colorDificultad = '#e67e22';
+    else if (dificultad.toLowerCase().includes('difícil') || dificultad.toLowerCase().includes('dificil')) colorDificultad = '#da1616';
+
+    const categoria = preguntaActual?.categoria 
+        ? (Array.isArray(preguntaActual.categoria) ? preguntaActual.categoria.join(", ") : preguntaActual.categoria)
+        : "—";
+
     m.innerHTML = `
         <div class="marcador-box">
-            <span class="marcador-label">Respondidas:</span>
+            <span class="marcador-label">Respondidas</span>
             <span class="marcador-value">${respondidas}</span>
         </div>
         <div class="marcador-box">
-            <span class="marcador-label">Puntos:</span>
+            <span class="marcador-label">Puntos</span>
             <span class="marcador-value">${Number(puntos.toFixed(2))}</span>
         </div>
         <div class="marcador-box">
-            <span class="marcador-label">Nota final:</span>
-            <span class="marcador-value" style="color:${nota < 5 ? '#da1616' : '#2e7d32'}">
-                ${Number(nota.toFixed(1))} / 10
-            </span>
+            <span class="marcador-label">Nota final</span>
+            <span class="marcador-value" style="color:${colorNota}">${notaTexto}</span>
+        </div>
+        <div class="marcador-box">
+            <span class="marcador-label">Dificultad</span>
+            <span class="marcador-value" style="color:${colorDificultad}; font-size: 1.2rem;">${dificultad}</span>
+        </div>
+        <div class="marcador-box">
+            <span class="marcador-label">Categorías</span>
+            <span class="marcador-value" style="font-size: 1.1rem;">${categoria}</span>
         </div>
     `;
 }
@@ -87,19 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnAbrir = document.getElementById("btn-abrir-filtros");
     const btnCerrar = document.getElementById("btn-cerrar-filtros");
     const errorDiv = document.getElementById("error-filtro");
-    const errorTexto = document.getElementById("error-texto");
 
     const btnAplicar = document.getElementById("btn-aplicar-filtros");
     const btnRestablecer = document.getElementById("btn-restablecer-filtros");
 
-    function mostrarError(mensaje) {
-        errorTexto.innerText = mensaje;
-        errorDiv.style.display = "flex";
-        setTimeout(() => { errorDiv.style.animation = "none"; }, 400);
-    }
-
     btnAbrir.onclick = () => {
-        errorDiv.style.display = "none";
+        if (errorDiv) errorDiv.style.display = "none";
         modal.style.display = "flex";
         setTimeout(() => modal.classList.add("show"), 10);
     };
@@ -113,46 +128,19 @@ document.addEventListener('DOMContentLoaded', () => {
     btnRestablecer.addEventListener("click", () => {
         document.querySelectorAll('input[name="f_categoria"]').forEach(cb => cb.checked = true);
         document.querySelectorAll('input[name="f_modalidad"]').forEach(cb => cb.checked = true);
-        const radioEs = document.querySelector('input[name="f_idioma"][value="Español europeo"]');
+        document.querySelectorAll('input[name="f_dificultad"]').forEach(cb => cb.checked = true);
+        
+        const radioEs = document.querySelector('input[name="f_idioma"][value="Español-ES"]');
         if (radioEs) radioEs.checked = true;
         
-        errorDiv.style.display = "none";
+        if (errorDiv) errorDiv.style.display = "none";
     });
 
     btnAplicar.addEventListener("click", () => {
-        const catsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_categoria"]:checked')).map(cb => cb.value);
-        const modsSeleccionadas = Array.from(document.querySelectorAll('input[name="f_modalidad"]:checked')).map(cb => cb.value);
-        const idiomaRadio = document.querySelector('input[name="f_idioma"]:checked');
-        const idiomaSeleccionado = idiomaRadio ? idiomaRadio.value : "";
-
-        if (catsSeleccionadas.length === 0 || modsSeleccionadas.length === 0) {
-            mostrarError("Debes seleccionar al menos una categoría y una modalidad.");
-            return;
+        const exito = aplicarFiltros(false);
+        if (exito) {
+            cerrarModal();
         }
-
-        const filtradas = allPreguntas.filter(p => {
-            const coincideCat = Array.isArray(p.categoria) 
-                ? p.categoria.some(c => catsSeleccionadas.includes(c))
-                : catsSeleccionadas.includes(p.categoria);
-            const coincideMod = modsSeleccionadas.includes(p.modalidad);
-            const coincideIdioma = p.idioma === idiomaSeleccionado;
-            return coincideCat && coincideMod && coincideIdioma;
-        });
-
-        if (filtradas.length === 0) {
-            mostrarError("No hay preguntas con esos filtros.");
-            return;
-        }
-
-        preguntas = [...filtradas];
-        respondidas = 0;
-        puntos = 0;
-        puntosMaximosPosibles = 0;
-
-        actualizarMarcadores(); 
-        mostrarPreguntaAleatoria(); 
-        
-        cerrarModal();
     });
 });
 
@@ -165,6 +153,8 @@ function mostrarPreguntaAleatoria() {
     setTimeout(() => {
         const idx = Math.floor(Math.random() * preguntas.length);
         preguntaActual = preguntas[idx];
+
+        actualizarMarcadores();
 
         document.getElementById("pregunta").textContent = preguntaActual.pregunta;
         document.getElementById("resultado").innerHTML = "";
@@ -335,7 +325,7 @@ function mostrarPreguntaAleatoria() {
             });
         }
         else {
-            inputDiv.innerHTML = `<div class="input-simple-container"><input type="text" id="main_input" autocomplete="off" placeholder="Escribe aquí..."></div>`;
+            inputDiv.innerHTML = `<div class="input-simple-container"><input type="text" id="main_input" autocomplete="off" placeholder="Introduce tu respuesta aquí"></div>`;
         }
 
         cont.style.display = "block";
@@ -346,6 +336,12 @@ function mostrarPreguntaAleatoria() {
         document.getElementById("btn-saltar").style.display = "inline-block";
         document.getElementById("btn-abrir-filtros").style.display = "inline-block";
         document.getElementById("btn-nueva").style.display = "none";
+
+        const modalRes = document.getElementById("modal-resultado");
+        if (modalRes) {
+            modalRes.classList.remove("show");
+            modalRes.style.display = "none";
+        }
     }, 50);
 }
 
@@ -396,7 +392,7 @@ document.getElementById("btn-comprobar").onclick = () => {
             if (ok.includes(v)) notaP += valorCampo;
             lineas.push(`• ${c.label}: <b>${Array.isArray(c.correcta) ? c.correcta[0] : c.correcta}</b>`);
         });
-        solHTML = lineas.join("<br>");
+        solHTML = '<b>Las correctas eran:</b> <p></p>'+lineas.join("<br>");
     } 
     else if (preguntaActual.tipo === "radio") {
         maxPuntosPregunta = preguntaActual.puntuacion?.total || 1;
@@ -426,12 +422,6 @@ document.getElementById("btn-comprobar").onclick = () => {
         
         Object.keys(preguntaActual.correcta).forEach(izqKey => {
             const derCorrecto = preguntaActual.correcta[izqKey];
-            
-            const itemIzqElement = document.querySelector(`#unir-izq [data-val="${izqKey}"]`);
-            
-            if (itemIzqElement && itemIzqElement.classList.contains('paired')) {
-                
-            }
             
             const itemsUnidos = Array.from(document.querySelectorAll('#unir-izq .unir-item.paired'));
             const tieneParejaCorrecta = itemsUnidos.some(el => {
@@ -474,7 +464,7 @@ document.getElementById("btn-comprobar").onclick = () => {
 
     document.getElementById("resultado").innerHTML = `
         <div class="feedback-header" style="color:${esCorrecto ? '#2e7d32' : (esParcial ? '#f39c12' : '#da1616')}">
-            ${esCorrecto ? '¡CORRECTO!' : (esParcial ? 'ACERTADO DE FORMA PARCIAL' : 'INCORRECTO')} (+${notaP.toFixed(2)} pts)
+            ${esCorrecto ? '¡CORRECTO!' : (esParcial ? 'PARCIALMENTE CORRECTO' : 'INCORRECTO')} (+${notaP.toFixed(2)} pts)
         </div>
         <div class="solucion-box">${solHTML}</div>`;
 
@@ -486,6 +476,10 @@ document.getElementById("btn-comprobar").onclick = () => {
 
     document.querySelectorAll(".drag-item").forEach(el => el.draggable = false);
     document.querySelectorAll("#input-dinamico input").forEach(i => i.disabled = true);
+
+    const modalRes = document.getElementById("modal-resultado");
+    modalRes.style.display = "flex";
+    setTimeout(() => modalRes.classList.add("show"), 10);
 };
 
 document.getElementById("btn-saltar").onclick = () => { if (canSkip) mostrarPreguntaAleatoria(); };
