@@ -76,6 +76,8 @@ function startGame() {
     pokemonRef.style.display = 'block';
     placeholder.style.display = 'none';
 
+    timerElement.style.display = 'block';
+
     timeLeft = 45;
     gameActive = true;
     startBtn.disabled = true;
