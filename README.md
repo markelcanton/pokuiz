@@ -1,11 +1,17 @@
-# PoKuiz - INFORMACIÓN IMPORTANTE: / IMPORTANT INFO:
+## PoKuiz - INFORMACIÓN IMPORTANTE: / IMPORTANT INFO:
 
-PoKuiz es un proyecto derivativo de Pokémon sin fines de lucro ni comerciales creado por fans. Todos los nombres, sprites y recursos asociados son propiedad registrada bajo derechos de autor en nombre a _The Pokémon Company, Pokémon/Nintendo/Creatures/Game Freak_.
+_PoKuiz_ es un proyecto derivativo de Pokémon sin fines de lucro ni comerciales creado por fans, hecho para que fans de Pokémon puedan aprender sobre la saga con un recurso completamente interactivo, sin anuncios y sin cuenta.
 
-Markel Cantón, creador de PoKuiz, es el autor y desarrollador del código de este proyecto y no permite su redistribución o uso comercial bajo ningún concepto. De igual manera, su creador jamás hará ningún uso comercial del mismo. PoKuiz se ha creado únicamente con la finalidad de que más personas aprendan acerca de Pokémon y puedan tener un recurso interactivo totalmente accesible, gratuito y sin anuncios o necesidad de requerir cuenta.
+> [!IMPORTANT]
+> _PoKuiz_ no tiene ninguna afiliación, asociación o está respaldado por Pokémon, Nintendo ni ninguna otra entidad comercial. Este proyecto sin fines de lucro ha sido desarrollado por [Markel Cantón](https://github.com/markelcanton/) únicamente con propósitos de interacción y entretenimiento. No se permite su redistribución o uso comercial bajo ningún concepto. De igual manera, su creador jamás hará ningún uso comercial del mismo.
 
------------
+> [!NOTE]
+> **Todas las imágenes, ilustraciones y nombres comercializados de Pokémon pertenecen a: © Pokémon / Nintendo / Creatures / GAME FREAK.**
+---
+_PoKuiz_ is a non-profit, non-commercial, fan-made Pokémon derivative project designed to let fans learn about the franchise through a fully interactive resource—free of ads and requiring no account.
 
-PoKuiz is a non-profit, non-commercial Pokémon spin-off project created by fans. All names, sprites, and associated resources are copyrighted and registered to _The Pokémon Company, Pokémon/Nintendo/Creatures/Game Freak_.
+> [!IMPORTANT]
+> _PoKuiz_ has no affiliation or partnership with, nor is it endorsed by, Pokémon, Nintendo, or any other commercial entity. This non-profit project was developed by [Markel Cantón](https://github.com/markelcanton/) solely for interactive and entertainment purposes. Redistribution or commercial use is strictly prohibited. Likewise, the creator will never make any commercial use of the project.
 
-Markel Cantón, the creator of PoKuiz, is the author and the developer of this project's code, and he doesn't allow its redistribution or commercial use. Likewise, its creator will never use it for commercial purposes. PoKuiz was created solely to help more people learn about Pokémon and to provide a fully accessible, free, interactive resource without ads or account requirements.
+> [!NOTE]
+> **All images, illustrations, and trademarked Pokémon names belong to: © Pokémon / Nintendo / Creatures / GAME FREAK.**
