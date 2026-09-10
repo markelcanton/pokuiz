@@ -1,0 +1,53 @@
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoKuiz</title>
+    <link rel="icon" type="image/png" href="img/logo/pokuizT.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/draw.css">
+    <link rel="stylesheet" href="css/anticheat.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo/pokuizLogo.png" title="Logotipo de PoKuiz" alt="Logotipo de PoKuiz">
+        <nav class="nav-buttons">
+            <a href="./">Inicio</a>
+            <a href="about">Créditos</a>
+        </nav>
+    </header>
+    <main>
+        <h1>¡Dibuja a todos!</h1>
+        <hr size="1">
+        <p>
+            <div class="main-game">
+                <div class="reference-box">
+                    <p>Pokémon a dibujar:</p>
+                    <img id="pokemonRef" src="" alt="?" style="display: none;">
+                    <div id="placeholder" style="font-size: 5rem;">?</div>
+                    <hr>
+                    <div id="timer" style="display: none;">45s</div>
+                </div>
+                <canvas id="drawCanvas" width="500" height="500"></canvas>
+            </div>
+
+            <div class="controls">
+                <button class="btn-main" id="startBtn" title="Pulsa aquí para iniciar">INICIAR</button>
+                <div class="tool-group">
+                    <input type="color" id="colorPicker" value="#000000" title="Pulsa aquí para abrir la paleta de colores">
+                    <input type="range" id="brushSize" min="1" max="25" value="6" title="Desliza para cambiar el tamaño del pincel">
+                </div>
+                <button class="btn-clear" id="clearBtn" title="Pulsa aquí para limpiar el lienzo por completo">LIMPIAR LIENZO</button>
+                <button class="btn-action" id="saveBtn" title="Pulsa aquí para guardar tu creación en tu dispositivo como PNG" disabled>GUARDAR COMO PNG</button>
+                <button class="btn-action" id="shareBtn" title="Pulsa aquí para compartir tu creación por otras aplicaciones" disabled style="background-color: #9c27b0;">COMPARTIR CREACIÓN</button>
+            </div>
+        </p>
+    </main>
+    <footer>
+        <b>Creado por <a target="_blank" href="https://github.com/markelcanton/" title="https://github.com/markelcanton/">Markel Cantón</a></b>
+        <i class="disclaimer" title="Acerca de PoKuiz">PoKuiz es un trabajo derivado no oficial basado en Pokémon. Los sprites, nombres y demás datos oficiales pertenecen a: © Pokémon/Nintendo/Creatures Inc./GAME FREAK Inc.</i>
+    </footer>
+</body>
+<script src="js/anticheat.js"></script>
+<script src="js/loadfade.js"></script>
+<script src="js/draw.js"></script>
+</html>
