@@ -23,13 +23,21 @@ let codigoSecreto = [];
 let seleccionUsuario = Array(numSlotsSecuencia).fill(null);
 let pokemonPartida = [];
 
-document.getElementById("btn-configuracion").onclick = () => {
-    document.getElementById("modal-configuracion").style.display = "flex";
+const modalConfig = document.getElementById("modal-configuracion");
+
+const abrirModalConfig = () => {
+    modalConfig.style.display = "flex";
+    setTimeout(() => modalConfig.classList.add("show"), 10);
 };
 
-document.getElementById("btn-cerrar-config").onclick = () => {
-    document.getElementById("modal-configuracion").style.display = "none";
+const cerrarModalConfig = () => {
+    modalConfig.classList.remove("show");
+    setTimeout(() => modalConfig.style.display = "none", 300);
 };
+
+document.getElementById("btn-configuracion").onclick = abrirModalConfig;
+document.getElementById("btn-cerrar-config").onclick = cerrarModalConfig;
+document.getElementById("btn-cancelar-config").onclick = cerrarModalConfig;
 
 document.getElementById("btn-guardar-config").onclick = () => {
     const form = document.getElementById("form-configuracion");
@@ -54,7 +62,7 @@ document.getElementById("btn-guardar-config").onclick = () => {
 
     seleccionUsuario = Array(numSlotsSecuencia).fill(null);
 
-    document.getElementById("modal-configuracion").style.display = "none";
+    cerrarModalConfig();
     reiniciarPartidaCompleta();
 };
 
@@ -243,8 +251,9 @@ function mostrarIntentoEnPantalla(colores, plenos, parciales) {
         divResumen.className = "resumen-oculto";
         divResumen.style.marginTop = "8px";
         divResumen.innerHTML = `
-            <span class="pista-indicador" style="color: #28a745;">🟢 Plenos: ${plenos}</span>
-            <span class="pista-indicador" style="color: #ffc107;">🟡 Parciales: ${parciales}</span>
+            <span class="pista-indicador" style="color: #28a745;">PLENOS: ${plenos}</span>
+            &#8226;
+            <span class="pista-indicador" style="color: #ffc107;">PARCIALES: ${parciales}</span>
         `;
         fila.appendChild(divResumen);
     }
@@ -284,6 +293,25 @@ function mostrarVictoria(victoria = true) {
 
     modal.style.display = "flex";
 }
+
+document.getElementById("btn-como-jugar").onclick = () => {
+    document.getElementById("modal-como-jugar").style.display = "flex";
+};
+
+document.getElementById("btn-cerrar-reglas").onclick = () => {
+    document.getElementById("modal-como-jugar").style.display = "none";
+};
+
+window.onclick = (e) => {
+    const modalReglas = document.getElementById("modal-como-jugar");
+    
+    if (e.target === modalReglas) {
+        modalReglas.style.display = "none";
+    }
+    if (e.target === modalConfig) {
+        cerrarModalConfig();
+    }
+};
 
 generarCodigo();
 inicializarInterfaz();
