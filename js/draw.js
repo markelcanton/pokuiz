@@ -2,7 +2,7 @@ let POKEMON_DISPONIBLES = [];
 
 async function loadDB() {
     try {
-        const DB = await fetch('../json/pkmn.json');
+        const DB = await fetch('json/pkmn.json');
         POKEMON_DISPONIBLES = await DB.json();
     } catch (error) {
         console.error("Error al cargar el archivo JSON:", error);
@@ -123,7 +123,7 @@ function generarCanvasFinal() {
     tempCtx.drawImage(canvas, 0, 0);
 
     const fecha = new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-    const urlWeb = "https://markelcanton.github.io/pokuiz/draw/";
+    const urlWeb = "https://markelcanton.github.io/pokuiz/draw";
 
     tempCtx.font = "bold italic 14px Arial";
     tempCtx.fillStyle = "rgba(0, 0, 0, 0.4)";
@@ -163,7 +163,7 @@ async function compartirCreacion() {
                 await navigator.share({
                     files: [archivo],
                     title: '¡Mira mi dibujo hecho en PoKuiz!',
-                    text: 'Crea el tuyo en PoKuiz (Draw): https://markelcanton.github.io/pokuiz/draw/'
+                    text: 'Crea el tuyo en PoKuiz (Draw): https://markelcanton.github.io/pokuiz/draw'
                 });
             } catch (error) {
                 console.log("User cancelled share.");
