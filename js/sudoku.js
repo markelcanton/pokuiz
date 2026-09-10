@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="modal-actions">
                         <button id="btn-modal-restart" class="btn-modal btn-modal-green">Jugar de nuevo</button>
-                        <a href="../#games" class="btn-modal btn-modal-secondary">Volver al Inicio</a>
+                        <a href="./#games" class="btn-modal btn-modal-secondary">Volver al Inicio</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.insertAdjacentHTML("beforeend", rulesModalHTML);
     }
 
-    fetch("../json/pkmn.json")
+    fetch("json/pkmn.json")
         .then(res => res.json())
         .then(data => {
             pokemonData = data;
