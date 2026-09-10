@@ -1,7 +1,7 @@
 let POKEMON_DISPONIBLES = [];
 async function loadDB() {
     try {
-        const DB = await fetch('../json/pkmn.json');
+        const DB = await fetch('json/pkmn.json');
         POKEMON_DISPONIBLES = await DB.json();
 
         generarCodigo();
