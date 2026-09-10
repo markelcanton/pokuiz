@@ -57,9 +57,9 @@ function setSlidersDisabled(disabledState) {
 }
 
 async function initGame() {
-    /*resultMessage.textContent = 'Cargando datos de pkmn.json...';*/
+    /*resultMessage.textContent = 'Cargando datos';*/
     try {
-        const response = await fetch('../json/pkmn.json');
+        const response = await fetch('json/pkmn.json');
         /*if (!response.ok) {
             throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
         }*/
@@ -211,12 +211,10 @@ function checkColorAttempt() {
         const modal = document.getElementById('modal-anticheat-fixed');
         startNewRound();
         modal.remove();
-
-        /*window.location.href = '../color';*/
     });
 
     document.getElementById('btn-modal-home').addEventListener('click', () => {
-        window.location.href = '../#games';
+        window.location.href = './#games';
     });
 }
 
