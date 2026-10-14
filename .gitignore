@@ -1,0 +1,9 @@
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+node_modules/
+*.tmp
+*.bak
