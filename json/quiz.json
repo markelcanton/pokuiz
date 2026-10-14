@@ -8345,8 +8345,6 @@
         "modalidad": "Selección única",
         "dificultad": "Normal"
     }, 
-    
-    // falta:
     {
         "tipo": "text",
         "pregunta": "¿En qué regulación de Pokémon Champions se introdujeron a Mega-Lucario Z, Mega-Garchomp Z y Mega-Absol Z? (+1p)",
