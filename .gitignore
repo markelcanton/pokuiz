@@ -7,3 +7,6 @@ desktop.ini
 node_modules/
 *.tmp
 *.bak
+
+# Omit files
+common.html
